@@ -19,7 +19,7 @@ export default [
     name: "Great Wall of China",
     shortDescription: "World's longest wall with a rich history",
     description: "The Great Wall of China, built over centuries, stretches thousands of miles. It served as a military defense and is a UNESCO World Heritage Site. The wall was constructed by various dynasties, including the Ming Dynasty. It consists of walls, watchtowers, and natural barriers. The Great Wall is an extraordinary example of ancient military architecture and engineering, adapting to the challenging terrain. It has become a symbol of China's rich history and culture, attracting around 10 million visitors annually. In 2007, it was officially recognized as one of the New Seven Wonders of the World.",
-    imageUrl: "",
+    imageUrl: "https://github.com/maralobes/DEV013-dataverse/blob/gh-pages/images/2.%20Great%20Wall%20of%20China.jpeg",
     facts: {
       yearOfBuilt: "7th century BC",
       style: "Various",
