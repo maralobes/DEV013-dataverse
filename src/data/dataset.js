@@ -4,7 +4,7 @@ export default [
     name: "The Colosseum",
     shortDescription: "Iconic Roman amphitheater",
     description: "The Colosseum, located in Rome, Italy, is a grand amphitheater built in AD 80. It is a symbol of ancient Roman engineering and once hosted gladiator contests. The elliptical structure could hold 50,000 spectators who gathered to witness various events, including battles between gladiators, animal hunts, and executions. The Colosseum's construction used concrete and sand, with an outer layer of travertine limestone. It stands as a testament to the architectural prowess of the ancient Romans and continues to be a major tourist attraction, attracting millions of visitors annually.",
-    imageUrl: "/images/",
+    imageUrl: "",
     facts: {
       yearOfBuilt: "80",
       style: "Roman",
@@ -19,7 +19,7 @@ export default [
     name: "Great Wall of China",
     shortDescription: "World's longest wall with a rich history",
     description: "The Great Wall of China, built over centuries, stretches thousands of miles. It served as a military defense and is a UNESCO World Heritage Site. The wall was constructed by various dynasties, including the Ming Dynasty. It consists of walls, watchtowers, and natural barriers. The Great Wall is an extraordinary example of ancient military architecture and engineering, adapting to the challenging terrain. It has become a symbol of China's rich history and culture, attracting around 10 million visitors annually. In 2007, it was officially recognized as one of the New Seven Wonders of the World.",
-    imageUrl: "/images/",
+    imageUrl: "",
     facts: {
       yearOfBuilt: "7th century BC",
       style: "Various",

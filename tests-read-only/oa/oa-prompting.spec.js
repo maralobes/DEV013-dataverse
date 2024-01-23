@@ -88,7 +88,7 @@ describe('Test de data set', () => {
         });
       });
     
-      xdescribe("imageUrl", () => {
+      describe("imageUrl", () => {
         it('Debe ser un string', () => {
           expect(typeof item.imageUrl).toBe('string');
         });
