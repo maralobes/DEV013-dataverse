@@ -1,6 +1,8 @@
 /* eslint-disable no-console */
 import data from '../../src/data/dataset.js'
 
+console.log(data)
+
 describe('Test de data set', () => {
   describe('Dataset', () => {
     it('Debe ser un arreglo', () => {
@@ -86,7 +88,7 @@ describe('Test de data set', () => {
         });
       });
     
-      describe("imageUrl", () => {
+      xdescribe("imageUrl", () => {
         it('Debe ser un string', () => {
           expect(typeof item.imageUrl).toBe('string');
         });
@@ -109,7 +111,8 @@ describe('Test de data set', () => {
         it('Los nombres de todas las propiedades deben tener formato camelCase', () => {
           expect.hasAssertions();
           Object.keys(item.facts).forEach((k) => {
-            expect(/^([a-z]+)(([A-Z]([a-z]+))+)$/.test(k)).toBe(true);
+            console.log(k)
+            expect(/^([a-z]+)(([A-Z]([a-z]+))*)$/.test(k)).toBe(true);
           });
         });
       

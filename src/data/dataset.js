@@ -1,302 +1,153 @@
-export const architecturalWorks = [
+export default [
   {
-    id: "great-wall-cn",
+    id: "colosseum",
+    name: "The Colosseum",
+    shortDescription: "Iconic Roman amphitheater",
+    description: "The Colosseum, located in Rome, Italy, is a grand amphitheater built in AD 80. It is a symbol of ancient Roman engineering and once hosted gladiator contests. The elliptical structure could hold 50,000 spectators who gathered to witness various events, including battles between gladiators, animal hunts, and executions. The Colosseum's construction used concrete and sand, with an outer layer of travertine limestone. It stands as a testament to the architectural prowess of the ancient Romans and continues to be a major tourist attraction, attracting millions of visitors annually.",
+    imageUrl: "",
+    facts: {
+      yearOfBuilt: "80",
+      style: "Roman",
+      location: "Rome, Italy",
+      constructor: "Emperor Vespasian",
+      annualVisitors: 7000000,
+      isWonderOfTheWorld: false
+    }
+  },
+  {
+    id: "greatwallchina",
     name: "Great Wall of China",
-    shortDescription: "Ancient defense marvel",
-    description: "The Great Wall of China, a UNESCO World Heritage Site, stretches over 13,000 miles. Built to protect against invasions, it reflects centuries of Chinese history.",
-    facts: ["Built over several dynasties", "Visible from space", "Thousands of watchtowers"],
-    constructors: ["Qin Shi Huang", "Emperor Wu", "Ming Dynasty"],
-    location: "China",
-    style: "Military architecture",
-    annualVisitors: 10_000_000,
-    wonderOfTheWorld: true
-  },
-  {
-    id: "taj-mahal-in",
-    name: "Taj Mahal",
-    shortDescription: "Symbol of love",
-    description: "The Taj Mahal, a masterpiece of Mughal architecture, was built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal. Its ivory-white marble and intricate details make it a UNESCO World Heritage Site.",
-    facts: ["Constructed between 1632 and 1653", "Inlaid with precious gemstones", "Minarets are slightly tilted outward"],
-    constructors: ["Ustad Ahmad Lahori", "Isa Khan", "Muhammad Hanif"],
-    location: "India",
-    style: "Mughal architecture",
-    annualVisitors: 8_000_000,
-    wonderOfTheWorld: false
-  },
-  {
-    id: "pyramids-eg",
-    name: "Great Pyramid of Giza",
-    shortDescription: "Ancient Egyptian wonder",
-    description: "The Great Pyramid of Giza is one of the Seven Wonders of the Ancient World. Built as a tomb for Pharaoh Khufu, it stands as a testament to ancient Egyptian engineering.",
-    facts: ["Built around 2560 BC", "Originally 146.6 meters tall", "Consists of over 2 million limestone blocks"],
-    constructors: ["Khufu", "Hemiunu", "Ankhhaf"],
-    location: "Egypt",
-    style: "Ancient Egyptian architecture",
-    annualVisitors: 4_000_000,
-    wonderOfTheWorld: true
-  },
-  {
-    id: "eiffel-tower-fr",
-    name: "Eiffel Tower",
-    shortDescription: "Iconic Parisian landmark",
-    description: "Designed by Gustave Eiffel, the Eiffel Tower was completed in 1889 as the entrance arch to the 1889 World's Fair. It has become a symbol of Paris and French ingenuity.",
-    facts: ["Height of 324 meters", "Constructed using iron", "Originally intended as a temporary structure"],
-    constructors: ["Gustave Eiffel", "Maurice Koechlin", "Émile Nouguier"],
-    location: "France",
-    style: "Structural iron lattice",
-    annualVisitors: 7_000_000,
-    wonderOfTheWorld: false
-  },
-  {
-    id: "acropolis-gr",
-    name: "Acropolis of Athens",
-    shortDescription: "Ancient Greek masterpiece",
-    description: "The Acropolis of Athens, a UNESCO World Heritage Site, is a complex of ancient buildings and structures, including the iconic Parthenon. It represents the peak of ancient Greek civilization.",
-    facts: ["Built in the 5th century BC", "Dedicated to the goddess Athena", "Served as a citadel"],
-    constructors: ["Iktinos", "Kallikrates", "Phidias"],
-    location: "Greece",
-    style: "Ancient Greek architecture",
-    annualVisitors: 3_000_000,
-    wonderOfTheWorld: false
-  },
-  {
-    id: "colosseum-it",
-    name: "Colosseum",
-    shortDescription: "Roman amphitheater",
-    description: "The Colosseum in Rome is the largest amphitheater ever built. Completed in 80 AD, it could hold up to 80,000 spectators and hosted gladiator contests and public spectacles.",
-    facts: ["Construction completed in 80 AD", "Made of concrete and sand", "Could hold 50,000 to 80,000 spectators"],
-    constructors: ["Vespasian", "Titus", "Domitian"],
-    location: "Italy",
-    style: "Roman architecture",
-    annualVisitors: 6_000_000,
-    wonderOfTheWorld: false
-  },
-  {
-    id: "sydney-opera-au",
-    name: "Sydney Opera House",
-    shortDescription: "Architectural icon of Australia",
-    description: "Designed by Jørn Utzon, the Sydney Opera House is a UNESCO World Heritage Site and a symbol of modern architecture. Its distinctive sail-like structures overlook Sydney Harbour.",
-    facts: ["Completed in 1973", "Consists of multiple performance venues", "Hosts various artistic events"],
-    constructors: ["Jørn Utzon", "Peter Hall", "David Littlemore"],
-    location: "Australia",
-    style: "Modern expressionist",
-    annualVisitors: 10_000_000,
-    wonderOfTheWorld: false
-  },
-  {
-    id: "machu-picchu-pe",
-    name: "Machu Picchu",
-    shortDescription: "Incan citadel in the Andes",
-    description: "Machu Picchu is a 15th-century Inca citadel situated on a mountain ridge in the Andes. It was built by the Inca emperor Pachacuti and later abandoned, only to be rediscovered in 1911.",
-    facts: ["Built in the 15th century", "Abandoned in the 16th century", "UNESCO World Heritage Site"],
-    constructors: ["Pachacuti", "Tupa Inca Yupanqui", "Huayna Capac"],
-    location: "Peru",
-    style: "Inca architecture",
-    annualVisitors: 1_500_000,
-    wonderOfTheWorld: false
-  },
-  {
-    id: "petra-jo",
-    name: "Petra",
-    shortDescription: "Ancient Nabatean city",
-    description: "Petra, a UNESCO World Heritage Site, is a historical and archaeological city in southern Jordan. Famous for its rock-cut architecture and water conduit system, it was the capital of the Nabataean Kingdom.",
-    facts: ["Carved into rose-red cliffs", "Capital of the Nabataean Kingdom", "Abandoned in the 7th century"],
-    constructors: ["Nabataeans", "Roman Empire", "Byzantine Empire"],
-    location: "Jordan",
-    style: "Nabatean architecture",
-    annualVisitors: 800_000,
-    wonderOfTheWorld: false
-  },
-  {
-      id: "st-petersburg-rus",
-      name: "State Hermitage Museum",
-      shortDescription: "Historic art and culture repository",
-      description: "The State Hermitage Museum in St. Petersburg, Russia, is one of the largest and oldest museums in the world. Its vast collection includes art, artifacts, and cultural exhibits.",
-      facts: ["Founded in 1764", "Over 3 million items in the collection", "Housed in the Winter Palace"],
-      constructors: ["Catherine the Great", "Bartolomeo Rastrelli", "Vasily Stasov"],
-      location: "Russia",
-      style: "Baroque architecture",
-      annualVisitors: 4_000_000,
-      wonderOfTheWorld: false
-    },
-    {
-      id: "angkor-wat-kh",
-      name: "Angkor Wat",
-      shortDescription: "Largest religious monument",
-      description: "Angkor Wat in Cambodia is the largest religious monument in the world. Originally built as a Hindu temple, it later transformed into a Buddhist temple complex.",
-      facts: ["Built in the 12th century", "Khmer Empire architecture", "Symbolizes Mount Meru"],
-      constructors: ["Suryavarman II", "Yajnavaraha", "Harihara"],
-      location: "Cambodia",
-      style: "Khmer architecture",
-      annualVisitors: 2_500_000,
-      wonderOfTheWorld: false
-    },
-    {
-      id: "forbidden-city-cn",
-      name: "Forbidden City",
-      shortDescription: "Imperial palace complex",
-      description: "The Forbidden City in Beijing, China, served as the imperial palace from the Ming Dynasty to the end of the Qing Dynasty. It is the largest palace complex in the world.",
-      facts: ["Built from 1406 to 1420", "Home to 24 emperors", "Over 8,000 rooms"],
-      constructors: ["Emperor Yongle", "Kuai Xiang", "Wu Li"],
+    shortDescription: "World's longest wall with a rich history",
+    description: "The Great Wall of China, built over centuries, stretches thousands of miles. It served as a military defense and is a UNESCO World Heritage Site. The wall was constructed by various dynasties, including the Ming Dynasty. It consists of walls, watchtowers, and natural barriers. The Great Wall is an extraordinary example of ancient military architecture and engineering, adapting to the challenging terrain. It has become a symbol of China's rich history and culture, attracting around 10 million visitors annually. In 2007, it was officially recognized as one of the New Seven Wonders of the World.",
+    imageUrl: "",
+    facts: {
+      yearOfBuilt: "7th century BC",
+      style: "Various",
       location: "China",
-      style: "Chinese palatial architecture",
-      annualVisitors: 15_000_000,
-      wonderOfTheWorld: false
-    },
-    {
-      id: "sagrada-familia-es",
-      name: "Sagrada Familia",
-      shortDescription: "Basilica and architectural masterpiece",
-      description: "The Sagrada Familia in Barcelona, Spain, is a basilica designed by Antoni Gaudí. Construction began in 1882, and it is still under construction, showcasing intricate modernist architecture.",
-      facts: ["Construction ongoing", "Expected completion in 2026", "Unique modernist design"],
-      constructors: ["Antoni Gaudí", "Francesc Berenguer", "Domenec Sugrañes"],
-      location: "Spain",
-      style: "Modernist architecture",
-      annualVisitors: 3_000_000,
-      wonderOfTheWorld: false
-    },
-    {
-      id: "alhambra-es",
-      name: "Alhambra",
-      shortDescription: "Moorish palace and fortress",
-      description: "The Alhambra in Granada, Spain, is a palace and fortress complex built during the mid-13th century by the Nasrid Dynasty. Known for its stunning Islamic architecture and gardens.",
-      facts: ["Built in the mid-13th century", "Palace of the Nasrid Dynasty", "UNESCO World Heritage Site"],
-      constructors: ["Muhammad I", "Muhammad V", "Yusuf I"],
-      location: "Spain",
-      style: "Moorish architecture",
-      annualVisitors: 2_000_000,
-      wonderOfTheWorld: false
-    },
-    {
-      id: "st-marks-basilica-it",
-      name: "St. Mark's Basilica",
-      shortDescription: "Cathedral with intricate mosaics",
-      description: "St. Mark's Basilica in Venice, Italy, is a cathedral known for its Byzantine architecture and stunning mosaics. It has been a symbol of Venetian wealth and power for centuries.",
-      facts: ["Built in the 9th century", "Home to St. Mark's relics", "Inspired by Eastern and Western styles"],
-      constructors: ["Domenico I Contarini", "Bartolomeo Bon", "Giovanni Bon"],
-      location: "Italy",
-      style: "Byzantine architecture",
-      annualVisitors: 2_500_000,
-      wonderOfTheWorld: false
-    },
-    {
-      id: "neuschwanstein-de",
-      name: "Neuschwanstein Castle",
-      shortDescription: "Fairytale-inspired castle",
-      description: "Neuschwanstein Castle in Bavaria, Germany, is a 19th-century palace built for Ludwig II. It is known for its fairytale-inspired design and served as the inspiration for Disney's Sleeping Beauty castle.",
-      facts: ["Built in the 19th century", "Commissioned by Ludwig II", "Opened to the public shortly after his death"],
-      constructors: ["Eduard Riedel", "Christian Jank", "August von Voit"],
-      location: "Germany",
-      style: "Romantic architecture",
-      annualVisitors: 1_400_000,
-      wonderOfTheWorld: false
-    },
-    {
-      id: "moai-easter-is",
-      name: "Easter Island Moai",
-      shortDescription: "Giant stone statues",
-      description: "The Moai statues on Easter Island, Chile, are monolithic human figures carved by the Rapa Nui people. These mysterious statues are scattered across the island and remain an archaeological wonder.",
-      facts: ["Carved between 1250 and 1500", "Up to 33 feet tall", "Over 800 statues on the island"],
-      constructors: ["Rapa Nui people", "Ancient Polynesians", "Unknown sculptors"],
-      location: "Chile",
-      style: "Rapa Nui sculpture",
-      annualVisitors: 500_000,
-      wonderOfTheWorld: false
-    },
-    {
-      id: "louvre-fr",
-      name: "Louvre Museum",
-      shortDescription: "World's largest art museum",
-      description: "The Louvre Museum in Paris, France, is the world's largest art museum and a historic monument. Home to thousands of works, including the Mona Lisa, it is a cultural icon.",
-      facts: ["Opened in 1793", "Former royal palace", "Houses the Mona Lisa"],
-      constructors: ["Philippe-Auguste", "Charles V", "Pierre Lescot"],
-      location: "France",
-      style: "Renaissance and modern architecture",
-      annualVisitors: 10_200_000,
-      wonderOfTheWorld: false
-    },
-    {
-      id: "pantheon-it",
-      name: "Pantheon",
-      shortDescription: "Ancient Roman temple",
-      description: "The Pantheon in Rome, Italy, is an ancient Roman temple turned church. Built in the 2nd century AD, it is renowned for its dome and classical architecture, influencing countless buildings throughout history.",
-      facts: ["Constructed in 126 AD", "Inspired by Greek architecture", "Burial place for Italian kings"],
-      constructors: ["Emperor Hadrian", "Apollodorus of Damascus", "Agrippa"],
-      location: "Italy",
-      style: "Ancient Roman architecture",
-      annualVisitors: 7_500_000,
-      wonderOfTheWorld: false
-      },
-      {
-      id: "borobudur-id",
-      name: "Borobudur",
-      shortDescription: "Buddhist temple in Java",
-      description: "Borobudur in Java, Indonesia, is a 9th-century Buddhist temple and the largest Buddhist monument in the world. Its intricate reliefs and stupas showcase the architectural prowess of the Sailendra dynasty.",
-      facts: ["Built in the 9th century", "Nine stacked platforms", "UNESCO World Heritage Site"],
-      constructors: ["Sailendra dynasty", "Gunadharma", "Samaratungga"],
-      location: "Indonesia",
-      style: "Javanese Buddhist architecture",
-      annualVisitors: 4_800_000,
-      wonderOfTheWorld: false
-      },
-      {
-      id: "stonehenge-uk",
-      name: "Stonehenge",
-      shortDescription: "Prehistoric monument in England",
-      description: "Stonehenge in Wiltshire, England, is a prehistoric monument consisting of a ring of standing stones. Its purpose and construction methods remain subjects of speculation and fascination.",
-      facts: ["Constructed in phases", "Aligned with astronomical events", "UNESCO World Heritage Site"],
-      constructors: ["Ancient Britons", "Druids", "Unknown builders"],
-      location: "United Kingdom",
-      style: "Neolithic and Bronze Age",
-      annualVisitors: 1_300_000,
-      wonderOfTheWorld: false
-      },
-      {
-      id: "potala-palace-cn",
-      name: "Potala Palace",
-      shortDescription: "Tibetan palace and monastery",
-      description: "The Potala Palace in Lhasa, Tibet, is a prominent Tibetan architectural marvel. It served as the winter residence of the Dalai Lamas and is now a museum and UNESCO World Heritage Site.",
-      facts: ["Constructed in the 17th century", "Houses over 1000 rooms", "Perched on Red Mountain"],
-      constructors: ["Ngawang Namgyal", "Fifth Dalai Lama", "Thupten Gyatso"],
-      location: "China (Tibet)",
-      style: "Tibetan architecture",
-      annualVisitors: 800_000,
-      wonderOfTheWorld: false
-      },
-      {
-      id: "dome-of-the-rock-ps",
-      name: "Dome of the Rock",
-      shortDescription: "Islamic shrine in Jerusalem",
-      description: "The Dome of the Rock in Jerusalem is an Islamic shrine located on the Temple Mount. Built in the 7th century, its golden dome is a symbol of Jerusalem's skyline.",
-      facts: ["Built in 691 AD", "Significant in Islamic architecture", "Contains the Foundation Stone"],
-      constructors: ["Abd al-Malik", "Raja ibn Haywah", "Umayyad Caliphate"],
-      location: "Israel",
-      style: "Islamic architecture",
-      annualVisitors: 1_000_000,
-      wonderOfTheWorld: false
-      },
-      {
-      id: "hagia-sophia-tr",
-      name: "Hagia Sophia",
-      shortDescription: "Historic cathedral and mosque",
-      description: "Hagia Sophia in Istanbul, Turkey, is a historic cathedral and mosque that has witnessed centuries of cultural and religious transitions. Its dome and stunning interior make it an architectural treasure.",
-      facts: ["Built in 537 AD", "Converted to a mosque in 1453", "Converted to a museum in 1935"],
-      constructors: ["Anthemius of Tralles", "Isidore of Miletus", "Mimar Sinan"],
-      location: "Turkey",
-      style: "Byzantine and Ottoman architecture",
-      annualVisitors: 3_500_000,
-      wonderOfTheWorld: false
-      },
-      {
-      id: "sistine-chapel-it",
-      name: "Sistine Chapel",
-      shortDescription: "Artistic masterpiece in Vatican City",
-      description: "The Sistine Chapel in Vatican City is renowned for its ceiling painted by Michelangelo. It serves as the papal chapel and a significant site for Renaissance art.",
-      facts: ["Ceiling painted from 1508 to 1512", "Famous for 'The Creation of Adam'", "Used for papal conclaves"],
-      constructors: ["Giovanni de’ Dolci", "Baccio Pontelli", "Michelangelo"],
-      location: "Vatican City",
-      style: "Renaissance architecture",
-      annualVisitors: 6_000_000,
-      wonderOfTheWorld: false
-      },
-      ];
+      constructor: "Various dynasties",
+      annualVisitors: 10000000,
+      isWonderOfTheWorld: true
+    }
+  },
+  {
+    id: "tajmahal",
+    name: "Taj Mahal",
+    shortDescription: "A marble mausoleum in India",
+    description: "The Taj Mahal, located in Agra, India, is an iconic marble mausoleum that stands as a testament to eternal love. Commissioned by Emperor Jahan in memory of his beloved wife Mumtaz Mahal, it was completed in 1653. This masterpiece of Mughal architecture combines intricate geometric patterns with exquisite craftsmanship. The Taj Mahal attracts approximately 8 million visitors annually, drawn by its stunning white marble facade, perfectly manicured gardens, and the poignant story of its creation. Recognized as a UNESCO World Heritage Site, the Taj Mahal remains an enduring symbol of India's rich cultural heritage and the enduring power of love.",
+    imageUrl: "",
+    facts: {
+      yearOfBuilt: "1653",
+      style: "Mughal",
+      location: "Agra, India",
+      constructor: "Emperor Shah Jahan",
+      annualVisitors: 8000000,
+      isWonderOfTheWorld: true
+    }
+  },
+  {
+    id: "eiffeltower",
+    name: "Eiffel Tower",
+    shortDescription: "Parisian landmark and iron masterpiece",
+    description: "Erected in 1889, the Eiffel Tower is an iconic iron lattice structure standing proudly in the heart of Paris, France. This architectural marvel symbolizes French ingenuity and innovation. Soaring to a height of 324 meters, the Eiffel Tower offers breathtaking panoramic views of Paris, attracting millions of visitors annually. Its intricate lattice design and Gothic Revival style make it a timeless symbol of the city. From its observation decks to its sparkling nighttime illumination, the Eiffel Tower remains a beloved landmark, serving as a testament to both engineering excellence and the romantic allure of the City of Light.",
+    imageUrl: "",
+    facts: {
+      yearOfBuilt: "1889",
+      style: "Gothic Revival",
+      location: "Paris, France",
+      constructor: "Gustave Eiffel",
+      annualVisitors: 7000000,
+      isWonderOfTheWorld: false
+    }
+  },
+  {
+    id: "pyramidofgiza",
+    name: "Pyramids of Giza",
+    shortDescription: "Ancient Egyptian pyramids with rich history",
+    description: "Built around 2580–2560 BC, the Pyramids of Giza stand as awe-inspiring ancient Egyptian structures located on the Giza Plateau near Cairo, Egypt. Dominated by the Great Pyramid of Khufu, these architectural marvels served as monumental tombs for pharaohs. The Great Pyramid, with its precise construction and alignment, remains one of the Seven Wonders of the Ancient World. Drawing approximately 1.5 million visitors annually, the Pyramids of Giza continue to captivate with their grandeur and historical significance, showcasing the advanced engineering skills of the ancient Egyptians and serving as a testament to their cultural and spiritual practices.",
+    imageUrl: "",
+    facts: {
+      yearOfBuilt: "2580",
+      style: "Ancient Egyptian",
+      location: "Giza, Egypt",
+      constructor: "Pharaoh Khufu",
+      annualVisitors: 1500000,
+      isWonderOfTheWorld: true
+    }
+  },
+  {
+    id: "sydneyoperahouse",
+    name: "Sydney Opera House",
+    shortDescription: "Iconic performing arts venue in Australia",
+    description: "Completed in 1973, the Sydney Opera House is a renowned architectural masterpiece situated in Australia. Designed by Jørn Utzon, its distinct shell-like structure has become an iconic symbol of modern architecture. This performing arts venue hosts a diverse range of artistic performances and events, attracting approximately 1 million visitors annually. Nestled on the shores of Sydney Harbour, the Sydney Opera House not only serves as a cultural hub but also offers breathtaking views of the city skyline and the harbor. With its innovative design and cultural significance, the Sydney Opera House remains a prominent landmark in Australia's vibrant cultural landscape.",
+    imageUrl: "",
+    facts: {
+      yearOfBuilt: "1973",
+      style: "Modern",
+      location: "Sydney, Australia",
+      constructor: "Jørn Utzon",
+      annualVisitors: 1000000,
+      isWonderOfTheWorld: false
+    }
+  },
+  {
+    id: "petra",
+    name: "Petra",
+    shortDescription: "Ancient city carved into rose-red cliffs",
+    description: "Established possibly as early as 312 BC, Petra is a captivating historical and archaeological city nestled in the rose-red cliffs of the Ma'an Governorate in Jordan. Renowned for its rock-cut architecture, including the iconic Al-Khazneh and the Monastery, Petra stands as a remarkable testament to the ingenuity of the Nabataean civilization. Carved into the pink sandstone, its intricate structures and elaborate facades tell the story of a once-thriving trade hub. Petra's mystical charm and archaeological significance continue to make it a UNESCO World Heritage Site and a must-visit destination for history enthusiasts worldwide.",
+    imageUrl: "",
+    facts: {
+      yearOfBuilt: "312",
+      style: "Nabataean",
+      location: "Ma'an Governorate, Jordan",
+      constructor: "Nabataeans",
+      annualVisitors: 800000,
+      isWonderOfTheWorld: false
+    }
+  },
+  {
+    id: "sagradafamilia",
+    name: "Sagrada Familia",
+    shortDescription: "Gaudi's masterpiece basilica in Barcelona",
+    description: "The Sagrada Familia, under construction since 1882, is a mesmerizing basilica located in Barcelona, Spain, and stands as a masterpiece of Catalan Modernism designed by the visionary architect Antoni Gaudí. This iconic structure, anticipated to be completed in the coming years, captivates with its unique and intricate design, blending Gothic and Art Nouveau elements. The Sagrada Familia is renowned for its towering spires, detailed facades, and intricate sculptures. As a symbol of Barcelona and Gaudí's architectural genius, it attracts around 4 million visitors annually, offering a profound experience that transcends time and showcases the evolution of architectural artistry.",
+    imageUrl: "",
+    facts: {
+      yearOfBuilt: "1882",
+      style: "Catalan Modernism",
+      location: "Barcelona, Spain",
+      constructor: "Antoni Gaudí",
+      annualVisitors: 4000000,
+      isWonderOfTheWorld: false
+    }
+  },
+  {
+    id: "acropolis",
+    name: "Acropolis of Athens",
+    shortDescription: "Ancient citadel on a rocky outcrop",
+    description: "The Acropolis of Athens, constructed in the 5th century BC, is a majestic citadel perched on a rocky outcrop above the city of Athens, Greece. This UNESCO World Heritage Site encompasses iconic structures such as the Parthenon, the Propylaea, the Erechtheion, and the Temple of Athena Nike. Serving as the spiritual and cultural heart of ancient Athens, the Acropolis stands as a symbol of classical Greek civilization and architectural brilliance. With its enduring historical and cultural significance, it attracts approximately 2.5 million visitors annually, allowing them to step back in time and appreciate the legacy of ancient Greek civilization.",
+    imageUrl: "",
+    facts: {
+      yearOfBuilt: "5",
+      style: "Ancient Greek",
+      location: "Athens, Greece",
+      constructor: "Various architects",
+      annualVisitors: 2500000,
+      isWonderOfTheWorld: false
+    }
+  },
+  {
+    id: "machupicchu",
+    name: "Machu Picchu",
+    shortDescription: "Incan citadel",
+    description: "Machu Picchu, constructed in the 15th century in the breathtaking Andes Mountains of Peru, is an awe-inspiring Incan citadel that continues to captivate the world. This UNESCO World Heritage Site stands as a testament to the advanced engineering and architectural prowess of the Inca civilization. Perched on a mountain ridge, Machu Picchu boasts well-preserved terraces, temples, and intricate stone structures. Visitors marvel at its strategic location and panoramic views, immersing themselves in the rich history of the Inca Empire. With approximately 1.5 million annual visitors, Machu Picchu remains a cultural treasure, offering a unique blend of natural beauty and ingenuity.",
+    imageUrl: "https://example.com/machupicchu_image.jpg",
+    facts: {
+      yearOfBuilt: "15",
+      style: "Incan",
+      location: "Andes Mountains, Peru",
+      constructor: "Inca civilization",
+      annualVisitors: 1500000,
+      isWonderOfTheWorld: true
+    }
+  },
+  
+];
