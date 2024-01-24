@@ -100,7 +100,7 @@ describe('Test de data set', () => {
       });
     
       describe('facts', () => {
-        it('Debe ser un objeto', () => {
+        it('Debe ser un objeto', () => {ç
           expect(typeof item.facts).toBe('object');
         })
       
