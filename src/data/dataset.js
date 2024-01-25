@@ -34,7 +34,8 @@ export default [
     name: "Taj Mahal",
     shortDescription: "A marble mausoleum in India",
     description: "The Taj Mahal, located in Agra, India, is an iconic marble mausoleum that stands as a testament to eternal love. Commissioned by Emperor Jahan in memory of his beloved wife Mumtaz Mahal, it was completed in 1653. This masterpiece of Mughal architecture combines intricate geometric patterns with exquisite craftsmanship. The Taj Mahal attracts approximately 8 million visitors annually, drawn by its stunning white marble facade, perfectly manicured gardens, and the poignant story of its creation. Recognized as a UNESCO World Heritage Site, the Taj Mahal remains an enduring symbol of India's rich cultural heritage and the enduring power of love.",
-    imageUrl: "https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/3.%20Taj%20Mahal.jpeg",
+    imageUrl:"https://example.com/ejemplo.jpg",
+    //imageUrl: "https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/3.%20Taj%20Mahal.jpeg",
     facts: {
       yearOfBuilt: "1653",
       style: "Mughal",
@@ -64,7 +65,8 @@ export default [
     name: "Pyramids of Giza",
     shortDescription: "Ancient Egyptian pyramids with rich history",
     description: "Built around 2580–2560 BC, the Pyramids of Giza stand as awe-inspiring ancient Egyptian structures located on the Giza Plateau near Cairo, Egypt. Dominated by the Great Pyramid of Khufu, these architectural marvels served as monumental tombs for pharaohs. The Great Pyramid, with its precise construction and alignment, remains one of the Seven Wonders of the Ancient World. Drawing approximately 1.5 million visitors annually, the Pyramids of Giza continue to captivate with their grandeur and historical significance, showcasing the advanced engineering skills of the ancient Egyptians and serving as a testament to their cultural and spiritual practices.",
-    imageUrl: "https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/5.%20Pyramids%20of%20Giza.jpeg",
+    imageUrl:"https://example.com/ejemplo.jpg",
+    //imageUrl: "https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/5.%20Pyramids%20of%20Giza.jpeg",
     facts: {
       yearOfBuilt: "2580",
       style: "Ancient Egyptian",
@@ -94,7 +96,8 @@ export default [
     name: "Petra",
     shortDescription: "Ancient city carved into rose-red cliffs",
     description: "Established possibly as early as 312 BC, Petra is a captivating historical and archaeological city nestled in the rose-red cliffs of the Ma'an Governorate in Jordan. Renowned for its rock-cut architecture, including the iconic Al-Khazneh and the Monastery, Petra stands as a remarkable testament to the ingenuity of the Nabataean civilization. Carved into the pink sandstone, its intricate structures and elaborate facades tell the story of a once-thriving trade hub. Petra's mystical charm and archaeological significance continue to make it a UNESCO World Heritage Site and a must-visit destination for history enthusiasts worldwide.",
-    imageUrl: "https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/7.%20Petra.jpeg",
+    imageUrl:"https://example.com/ejemplo.jpg",
+    //imageUrl: "https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/7.%20Petra.jpeg",
     facts: {
       yearOfBuilt: "312",
       style: "Nabataean",
@@ -139,7 +142,8 @@ export default [
     name: "Machu Picchu",
     shortDescription: "Incan citadel",
     description: "Machu Picchu, constructed in the 15th century in the breathtaking Andes Mountains of Peru, is an awe-inspiring Incan citadel that continues to captivate the world. This UNESCO World Heritage Site stands as a testament to the advanced engineering and architectural prowess of the Inca civilization. Perched on a mountain ridge, Machu Picchu boasts well-preserved terraces, temples, and intricate stone structures. Visitors marvel at its strategic location and panoramic views, immersing themselves in the rich history of the Inca Empire. With approximately 1.5 million annual visitors, Machu Picchu remains a cultural treasure, offering a unique blend of natural beauty and ingenuity.",
-    imageUrl: "https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/10.%20Machu%20Picchu.jpeg",
+    imageUrl:"https://example.com/ejemplo.jpg",
+    //imageUrl: "https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/10.%20Machu%20Picchu.jpeg",
     facts: {
       yearOfBuilt: "15",
       style: "Incan",
@@ -169,7 +173,8 @@ export default [
     name: "Stonehenge",
     shortDescription: "Prehistoric monument in England",
     description: "Stonehenge, an ancient and mysterious monument located on Salisbury Plain in Wiltshire, England, is a prehistoric marvel that continues to captivate the imagination. Constructed around 3000 BC to 2000 BC, Stonehenge is comprised of massive standing stones arranged in a circular pattern, with lintels atop some of them. The purpose of its creation remains a subject of debate, ranging from astronomical observations to religious or ceremonial significance. Drawing over a million visitors annually, Stonehenge stands as a UNESCO World Heritage Site, inviting contemplation and wonder about the engineering skills and cultural practices of its Neolithic builders.",
-    imageUrl: "https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/12.%20Stonehenge.jpeg",
+    imageUrl:"https://example.com/ejemplo.jpg",
+    //imageUrl: "https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/12.%20Stonehenge.jpeg",
     facts: {
       yearOfBuilt: "3000 BC",
       style: "Prehistoric",
@@ -184,7 +189,8 @@ export default [
     name: "Neuschwanstein Castle",
     shortDescription: "Fairytale-like castle in Bavaria",
     description: "Neuschwanstein Castle, nestled in the Bavarian Alps near Füssen, Germany, is a fairytale-inspired masterpiece and a symbol of romantic architecture. Commissioned by King Ludwig II and completed in 1886, the castle sits against a picturesque backdrop of forests and mountains. With its turrets, towers, and enchanting interiors, Neuschwanstein is a blend of medieval and fantasy elements, reminiscent of a storybook castle. Drawing inspiration from Wagnerian opera, the castle offers stunning panoramic views and attracts millions of visitors annually, making it one of the most iconic and visited landmarks in Germany, embodying the romantic spirit of the 19th century.",
-    imageUrl: "https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/13.-Neuschwanstein-Castle.jpeg",
+    imageUrl:"https://example.com/ejemplo.jpg",
+    //imageUrl: "https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/13.-Neuschwanstein-Castle.jpeg",
     facts: {
       yearOfBuilt: "1886",
       style: "Romantic",
