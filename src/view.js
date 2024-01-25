@@ -1,9 +1,9 @@
+import dataset from "./data/dataset";
+
 export const renderItems = (data) => {
   console.log(data)
-  
-      // Función para renderizar un lugar
      
-        const workList = document.getElementById("placesList");
+        const ulList = document.getElementById("placesList");
 
         // const item = document.createElement("li");//dl
         // const nameWork = document.createElement("h2");//dt
@@ -19,41 +19,49 @@ export const renderItems = (data) => {
         // shortDescrWork.setAttribute("itemprop", "shortDescription");
         // descrWork.setAttribute("itemprop", "description");
         
-        // // item.id = data.id;
+
         // nameWork.innerHTML = `${data.name}`;
         // imageWork.innerHTML = data.imageUrl;
         // shortDescrWork.innerHTML= data.shortDescription;
         // descrWork.innerHTML = data.description;
   
-        for (const [name,imageUrl,shortDescription,description] of Object.entries(data)) {
+        // for (let [dataName,] of Object.entries(data)) {
+          for (let i = 0; i<data.length; i ++){
           
-          const item = document.createElement("li");//dl
+          const item = document.createElement("li");
+          
+          const idWork = document.createElement("dl");//dl
+          idWork.setAttribute("itemscope", "");
+          idWork.setAttribute("itemtype", "name");
+          idWork.innerHTML = data.id
 
-          const nameWork = document.createElement("h2");//dt
+          const nameWork = document.createElement("dt");//dt
           nameWork.setAttribute("itemprop", "name");
-          nameWork.innerHTML = name;
+          nameWork.innerHTML = data.name;
         
-          const imageWork = document.createElement("img");//dt
+          const imageWork = document.createElement("dt");//dt
           imageWork.setAttribute("itemprop", "image");
-          imageWork.innerHTML = imageUrl;
+          imageWork.innerHTML = data.imageUrl;
 
-          const shortDescrWork = document.createElement("p");//dt
+          const shortDescrWork = document.createElement("dt");//dt
           shortDescrWork.setAttribute("itemprop", "shortDescription");
-          shortDescrWork.innerHTML= shortDescription;
+          shortDescrWork.innerHTML= data.shortDescription;
 
-          const descrWork = document.createElement("p");//dt
+          const descrWork = document.createElement("dt");//dt
           descrWork.setAttribute("itemprop", "description");
-          descrWork.innerHTML = description;
+          descrWork.innerHTML = data.description;
          
-          workList.appendChild(item);
+     
+          item.appendChild(idWork);
           item.appendChild(nameWork);
           item.appendChild(imageWork);
           item.appendChild(shortDescrWork);
           item.appendChild(descrWork);
 
         }
+        ulList.appendChild(item);
       
   
       console.log(data)
-  return data.forEach(renderItems) ;
+  return dataset.forEach(renderItems) ;
 };
