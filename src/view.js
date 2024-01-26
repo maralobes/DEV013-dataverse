@@ -18,8 +18,8 @@ export const renderItems = (data) => {
           nameWork.innerHTML = data[i].name;
         
           const imageWork = document.createElement("img");
-          imageWork.setAttribute("src",data.imageUrl);
-          imageWork.setAttribute("alt",data.name);
+          imageWork.setAttribute("src",data[i].imageUrl);
+          imageWork.setAttribute("alt",data[i].name);
           imageWork.innerHTML = data[i].imageUrl;
 
           const shortDescrWork = document.createElement("dt");//dt
