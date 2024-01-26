@@ -4,7 +4,7 @@ export const renderItems = (data) => {
   console.log(dataset);
      
         const ulList = document.getElementById("placesList");
-          for (let i = 0; i< data.length; i ++){
+          for (let i = 0; i<= data.length; i ++){
           console.log(data[i]);
           const item = document.createElement("li");
           
@@ -14,8 +14,10 @@ export const renderItems = (data) => {
           idWork.innerHTML = data[i].id;
 
           const nameWork = document.createElement("dt");//dt
-          nameWork.setAttribute("itemprop", "name");
-          nameWork.innerHTML = data[i].name;
+          const nameText = document.createElement("dd");
+          nameText.setAttribute("itemprop", "name");
+          nameWork.innerHTML = "Nombre:"
+          nameText.innerHTML = data[i].name;
         
           const imageWork = document.createElement("img");
           imageWork.setAttribute("src",data[i].imageUrl);
@@ -30,15 +32,15 @@ export const renderItems = (data) => {
           descrWork.setAttribute("itemprop", "description");
           descrWork.innerHTML = data[i].description;
          
-          
           item.appendChild(idWork);
           item.appendChild(nameWork);
+          item.appendChild(nameText);
           item.appendChild(imageWork);
           item.appendChild(shortDescrWork);
           item.appendChild(descrWork);
           ulList.appendChild(item);
+    
         }
-
       console.log(data)
   return ulList;
 };
