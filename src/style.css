@@ -1,0 +1,48 @@
+body {
+    background-color: #F2F2F0;  
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    margin: 0;
+}
+
+header{
+    margin: 0;
+    color: #BEBDA9;
+    width: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/2.%20Great%20Wall%20of%20China.jpeg");
+    text-align: center;
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #BEBDA9;
+    font-size: 50px;
+    }
+
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.item {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
