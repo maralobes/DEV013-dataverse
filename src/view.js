@@ -1,48 +1,118 @@
-import dataset from "./data/dataset.js";
-
 export const renderItems = (data) => {
-  console.log(dataset);
-     
-        const ulList = document.getElementById("placesList");
-          for (let i = 0; i<= data.length; i ++){
-          console.log(data[i]);
-          const item = document.createElement("li");
-          
-          const idWork = document.createElement("dl");//dl
-          idWork.setAttribute("itemscope", "");
-          idWork.setAttribute("itemtype", "id");
-          idWork.innerHTML = data[i].id;
+  const ulList = document.createElement("ul");
+  ulList.classList.add('fList')//le puse f de father list y al otro cList por child list 
+  for (let i = 0; i <data.length; i++) {
+    const item = document.createElement("li");
+    item.classList.add('cList');
 
-          const nameWork = document.createElement("dt");//dt
-          const nameText = document.createElement("dd");
-          nameText.setAttribute("itemprop", "name");
-          nameWork.innerHTML = "Nombre:"
-          nameText.innerHTML = data[i].name;
-        
-          const imageWork = document.createElement("img");
-          imageWork.setAttribute("src",data[i].imageUrl);
-          imageWork.setAttribute("alt",data[i].name);
-          imageWork.innerHTML = data[i].imageUrl;
+    const archiWork = document.createElement("dl");
+    archiWork.setAttribute("itemscope", "");
+    archiWork.setAttribute("itemtype", "items");
 
-          const shortDescrWork = document.createElement("dt");//dt
-          shortDescrWork.setAttribute("itemprop", "shortDescription");
-          shortDescrWork.innerHTML= data[i].shortDescription;
+    const idWork = document.createElement("dt");
+    idWork.innerHTML = "id:";
+    const idText = document.createElement("dd");
+    idText.setAttribute("itemprop", "id");
+    idText.innerHTML = data[i].id;
+    idWork.style.display = "none";
+    idText.style.display = "none";
 
-          const descrWork = document.createElement("dt");//dt
-          descrWork.setAttribute("itemprop", "description");
-          descrWork.innerHTML = data[i].description;
-         
-          item.appendChild(idWork);
-          item.appendChild(nameWork);
-          item.appendChild(nameText);
-          item.appendChild(imageWork);
-          item.appendChild(shortDescrWork);
-          item.appendChild(descrWork);
-          ulList.appendChild(item);
-    
-        }
-      console.log(data)
+    const nameWork = document.createElement("dt");
+    nameWork.innerHTML = "Nombre:";
+    const nameText = document.createElement("dd");
+    nameText.setAttribute("itemprop", "name");
+    nameText.innerHTML = data[i].name;
+
+    const imageWork = document.createElement("img");
+    imageWork.setAttribute("src", data[i].imageUrl);
+    imageWork.setAttribute("alt", data[i].name);
+    imageWork.innerHTML = data[i].imageUrl;
+
+    const shortDescrWork = document.createElement("dt");
+    shortDescrWork.innerHTML = "Short description:";
+    const shortText = document.createElement("dd");
+    shortText.setAttribute("itemprop", "shortDescription");
+    shortText.innerHTML = data[i].shortDescription;
+
+    const descrWork = document.createElement("dt");
+    descrWork.innerHTML = "Description:";
+    const descText = document.createElement("dd");
+    descText.setAttribute("itemprop", "description");
+    descText.innerHTML = data[i].description;
+
+    const factsWork = document.createElement("dl");
+    factsWork.setAttribute("itemscope", "");
+    factsWork.setAttribute("itemtype", "facts");
+    factsWork.style.display = "none";
+
+    const yearWork = document.createElement("dt");
+    yearWork.innerHTML = "Year of built:";
+    const yearText = document.createElement("dd");
+    yearText.setAttribute("itemprop", "yearOfBuilt");
+    yearText.innerHTML = data[i].facts.yearOfBuilt;
+
+    const stylerWork = document.createElement("dt");
+    stylerWork.innerHTML = "Style:";
+    const styleText = document.createElement("dd");
+    styleText.setAttribute("itemprop", "style");
+    styleText.innerHTML = data[i].facts.style;
+
+    const locationWork = document.createElement("dt");
+    locationWork.innerHTML = "Location:";
+    const locationText = document.createElement("dd");
+    locationText.setAttribute("itemprop", "location");
+    locationText.innerHTML = data[i].facts.location;
+
+    const constructorWork = document.createElement("dt");
+    constructorWork.innerHTML = "Constructor:";
+    const constructorText = document.createElement("dd");
+    constructorText.setAttribute("itemprop", "constructor");
+    constructorText.innerHTML = data[i].facts.constructor;
+
+    const visitorsWork = document.createElement("dt");
+    visitorsWork.innerHTML = "Annual visitors:";
+    const visitorsText = document.createElement("dd");
+    visitorsText.setAttribute("itemprop", "annualVisitors");
+    visitorsText.innerHTML = data[i].facts.annualVisitors;
+
+    const wonderWork = document.createElement("dt");
+    wonderWork.innerHTML = "Wonder of the World:";
+    const wonderText = document.createElement("dd");
+    wonderText.setAttribute("itemprop", "IsWonderOfTheWorld");
+    wonderText.innerHTML = data[i].facts.isWonderOfTheWorld;
+
+    ulList.appendChild(item);
+    item.appendChild(archiWork);
+    archiWork.append(
+      idWork,
+      idText,
+      imageWork,
+      nameWork,
+      nameText,
+      shortDescrWork,
+      shortText,
+      descrWork,
+      descText,
+      factsWork
+    );
+    factsWork.append(
+      yearWork,
+      yearText,
+      stylerWork,
+      styleText,
+      locationWork,
+      locationText,
+      constructorWork,
+      constructorText,
+      visitorsWork,
+      visitorsText,
+      wonderWork,
+      wonderText
+    );
+      imageWork.addEventListener("click", function(){
+      factsWork.style.display = "block";
+      })
+  }
+  
   return ulList;
 };
-
-renderItems(dataset);
