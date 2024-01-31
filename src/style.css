@@ -45,24 +45,34 @@ body {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: flex-start;
-    gap: 800px;
-    margin: 10%;
-    padding: 900px;
+    gap: 10%;
+    margin: 15%;
+    padding: auto;
     list-style: none;
 }
 
 .cList {
-    width: 100%;
-    max-width: 350px;
-    height: 300px;
-    object-fit: conver;
+    object-fit: cover;
     font-size: 25px;
     flex-direction: column;
-    column-gap: 16px;
 }
 
 .cList img{
+    width: 900px;
+    max-width: 1100px;
+    max-height: 1200px;
+    height: 700px;
     border-radius: 10%;
+
+}
+
+dt{
+    font-size: 40px;
+
+}
+
+dd {
+    font-size: 35px;
 }
 
 footer{
