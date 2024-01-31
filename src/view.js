@@ -1,9 +1,9 @@
 export const renderItems = (data) => {
   const ulList = document.createElement("ul");
-  ulList.classList.add('fList')//le puse f de father list y al otro cList por child list 
-  for (let i = 0; i <data.length; i++) {
+  ulList.classList.add("fList"); //le puse f de father list y al otro cList por child list
+  for (let i = 0; i < data.length; i++) {
     const item = document.createElement("li");
-    item.classList.add('cList');
+    item.classList.add("cList");
 
     const archiWork = document.createElement("dl");
     archiWork.setAttribute("itemscope", "");
@@ -22,6 +22,8 @@ export const renderItems = (data) => {
     const nameText = document.createElement("dd");
     nameText.setAttribute("itemprop", "name");
     nameText.innerHTML = data[i].name;
+    nameText.style.display = "none";
+    nameWork.style.display = "none";
 
     const imageWork = document.createElement("img");
     imageWork.setAttribute("src", data[i].imageUrl);
@@ -33,12 +35,16 @@ export const renderItems = (data) => {
     const shortText = document.createElement("dd");
     shortText.setAttribute("itemprop", "shortDescription");
     shortText.innerHTML = data[i].shortDescription;
+    shortText.style.display = "none";
+    shortDescrWork.style.display = "none";
 
     const descrWork = document.createElement("dt");
     descrWork.innerHTML = "Description:";
     const descText = document.createElement("dd");
     descText.setAttribute("itemprop", "description");
     descText.innerHTML = data[i].description;
+    descText.style.display = "none";
+    descrWork.style.display = "none";
 
     const factsWork = document.createElement("dl");
     factsWork.setAttribute("itemscope", "");
@@ -109,10 +115,48 @@ export const renderItems = (data) => {
       wonderWork,
       wonderText
     );
-      imageWork.addEventListener("click", function(){
+    imageWork.addEventListener("click", function () {
+      nameText.style.display = "block";
+      nameWork.style.display = "block";
+      shortText.style.display = "block";
+      shortDescrWork.style.display = "block";
+      descText.style.display = "block";
+      descrWork.style.display = "block";
       factsWork.style.display = "block";
-      })
+
+      // imageWork.style.display = "block";
+      // factsWork.style.display = "block";
+    });
+
+    // let containerDiv = document.createElement("div");
+    // containerDiv.className = "container";
+
+    // containerDiv.append(imageWork);
+
+    // let popupDiv = document.createElement("div");
+    // popupDiv.className = "popup";
+    // popupDiv.id = "popup";
+
+    // popupDiv.append(factsWork);
+
+    // let closeButton = document.createElement("button");
+    // closeButton.type = "button";
+    // closeButton.textContent = "Close";
+    // closeButton.addEventListener("click", closePopup);
+    // popupDiv.append(closeButton);
+
+    // containerDiv.append(popupDiv);
+
+    // document.body.append(containerDiv);
+
+    // imageWork.addEventListener("click", function () {
+    //   popupDiv.style.display = "block";
+    // });
+
+    // function closePopup() {
+    //   popupDiv.style.display = "none";
+    // }
   }
-  
+
   return ulList;
 };
