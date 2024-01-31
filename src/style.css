@@ -17,6 +17,7 @@ body {
     height: 60vh;
     margin: 0;
     width: auto;
+    opacity: 110%;
     }
 
 .container h1, p{ 
@@ -55,8 +56,17 @@ body {
     max-width: 350px;
     height: 300px;
     object-fit: conver;
+    font-size: 25px;
+    flex-direction: column;
+    column-gap: 16px;
 }
 
 .cList img{
     border-radius: 10%;
+}
+
+footer{
+    font-size: 70px;
+    background-color: #757577;
+    padding: 100px;
 }
