@@ -1,6 +1,7 @@
 export const renderItems = (data) => {
   const ulList = document.createElement("ul");
   ulList.classList.add("fList"); //le puse f de father list y al otro cList por child list
+  const workItems = document.create
   for (let i = 0; i < data.length; i++) {
     const item = document.createElement("li");
     item.classList.add("cList");
@@ -142,7 +143,7 @@ export const renderItems = (data) => {
 
       const namePop = document.createElement("dt");
       namePop.innerHTML = "Nombre:" + data[i].name;
-      // `url(${data.imageUrl})`
+      // `url(${data[i].name})`
       namePop.id = "namePop";
 
   
