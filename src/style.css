@@ -1,9 +1,9 @@
 body {
     background-color: #F2F2F0;  
-    font-family: "Urbanist", sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 350;
-    font-style: normal;
+    font-weight: 300;
+    font-variation-settings: "slnt" 0;
     margin: 0;
 }
 
@@ -36,6 +36,7 @@ body {
 
 .container p{
     font-size: 350px;
+    font-weight: bold;
     padding: 500px;
     
 }
@@ -71,14 +72,19 @@ body {
 }
 
 dt{
-    font-size: 40px;
+    font-size: 48px;
+    font-weight: bold;
 }
 
 dd {
-    font-size: 35px;
+    font-size: 32px;
 }
 
 footer{
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
     font-size: 70px;
     background-color: #757577;
     padding: 100px;
