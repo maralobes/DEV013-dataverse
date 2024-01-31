@@ -244,7 +244,7 @@ export default [
     name: "Leaning Tower of Pisa",
     shortDescription: "Iconic leaning bell tower in Italy",
     description: "The Leaning Tower of Pisa, an iconic structure in Italy, is celebrated for its tilt and architectural ingenuity. Construction began in 1173, and the tower's unintentional lean was caused by unstable soil. Standing approximately 56 meters tall, the white marble tower boasts Romanesque and Gothic influences with intricately adorned columns and arches. Despite its structural challenges, the tower has become a global symbol of resilience and creative problem-solving. Recognized as a UNESCO World Heritage Site, it draws millions of visitors annually, offering a unique blend of history, engineering marvel, and the picturesque beauty of its silhouette against the Italian skyline.",
-    imageUrl: "/https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/17.%20Leaning%20Tower%20of%20Pisa.jpeg",
+    imageUrl: "https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/17.%20Leaning%20Tower%20of%20Pisa.jpeg",
     facts: {
       yearOfBuilt: "1372",
       style: "Romanesque",
