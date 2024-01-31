@@ -115,47 +115,102 @@ export const renderItems = (data) => {
       wonderWork,
       wonderText
     );
-    imageWork.addEventListener("click", function () {
-      nameText.style.display = "block";
-      nameWork.style.display = "block";
-      shortText.style.display = "block";
-      shortDescrWork.style.display = "block";
-      descText.style.display = "block";
-      descrWork.style.display = "block";
-      factsWork.style.display = "block";
-
-      // imageWork.style.display = "block";
-      // factsWork.style.display = "block";
-    });
-
-    // let containerDiv = document.createElement("div");
-    // containerDiv.className = "container";
-
-    // containerDiv.append(imageWork);
-
-    // let popupDiv = document.createElement("div");
-    // popupDiv.className = "popup";
-    // popupDiv.id = "popup";
-
-    // popupDiv.append(factsWork);
-
-    // let closeButton = document.createElement("button");
-    // closeButton.type = "button";
-    // closeButton.textContent = "Close";
-    // closeButton.addEventListener("click", closePopup);
-    // popupDiv.append(closeButton);
-
-    // containerDiv.append(popupDiv);
-
-    // document.body.append(containerDiv);
-
     // imageWork.addEventListener("click", function () {
-    //   popupDiv.style.display = "block";
+    //   nameText.style.display = "block";
+    //   nameWork.style.display = "block";
+    //   shortText.style.display = "block";
+    //   shortDescrWork.style.display = "block";
+    //   descText.style.display = "block";
+    //   descrWork.style.display = "block";
+    //   factsWork.style.display = "block";
+
+    //   // imageWork.style.display = "block";
+    //   // factsWork.style.display = "block";
     // });
 
-    // function closePopup() {
-    //   popupDiv.style.display = "none";
-    // }
+
+
+    imageWork.addEventListener("click", function openPopup() {
+      const popupDiv = document.createElement("div");
+      popupDiv.className = "popup";
+      popupDiv.id = "popup";
+  
+      const imagePop = document.createElement("img");
+      imagePop.src = data[i].imageUrl;
+      imagePop.id = "imagePop";
+      popupDiv.style.display = "block";
+
+      const namePop = document.createElement("dt");
+      namePop.innerHTML = "Nombre:" + data[i].name;
+      // `url(${data.imageUrl})`
+      namePop.id = "namePop";
+
+  
+      const shortDescrWork = document.createElement("dt");
+      shortDescrWork.innerHTML = "Short description:";
+      const shortText = document.createElement("dd");
+      shortText.setAttribute("itemprop", "shortDescription");
+      shortText.innerHTML = data[i].shortDescription;
+      shortText.style.display = "none";
+      shortDescrWork.style.display = "none";
+  
+      const descrWork = document.createElement("dt");
+      descrWork.innerHTML = "Description:";
+      const descText = document.createElement("dd");
+      descText.setAttribute("itemprop", "description");
+      descText.innerHTML = data[i].description;
+      descText.style.display = "none";
+      descrWork.style.display = "none";
+  
+      const factsWork = document.createElement("dl");
+      factsWork.setAttribute("itemscope", "");
+      factsWork.setAttribute("itemtype", "facts");
+      factsWork.style.display = "none";
+  
+      const yearWork = document.createElement("dt");
+      yearWork.innerHTML = "Year of built:";
+      const yearText = document.createElement("dd");
+      yearText.setAttribute("itemprop", "yearOfBuilt");
+      yearText.innerHTML = data[i].facts.yearOfBuilt;
+  
+      const stylerWork = document.createElement("dt");
+      stylerWork.innerHTML = "Style:";
+      const styleText = document.createElement("dd");
+      styleText.setAttribute("itemprop", "style");
+      styleText.innerHTML = data[i].facts.style;
+  
+      const locationWork = document.createElement("dt");
+      locationWork.innerHTML = "Location:";
+      const locationText = document.createElement("dd");
+      locationText.setAttribute("itemprop", "location");
+      locationText.innerHTML = data[i].facts.location;
+  
+      const constructorWork = document.createElement("dt");
+      constructorWork.innerHTML = "Constructor:";
+      const constructorText = document.createElement("dd");
+      constructorText.setAttribute("itemprop", "constructor");
+      constructorText.innerHTML = data[i].facts.constructor;
+  
+      const visitorsWork = document.createElement("dt");
+      visitorsWork.innerHTML = "Annual visitors:";
+      const visitorsText = document.createElement("dd");
+      visitorsText.setAttribute("itemprop", "annualVisitors");
+      visitorsText.innerHTML = data[i].facts.annualVisitors;
+  
+      const wonderWork = document.createElement("dt");
+      wonderWork.innerHTML = "Wonder of the World:";
+      const wonderText = document.createElement("dd");
+      wonderText.setAttribute("itemprop", "IsWonderOfTheWorld");
+      wonderText.innerHTML = data[i].facts.isWonderOfTheWorld;
+
+
+
+      popupDiv.appendChild(imagePop);
+      ulList.append(popupDiv);
+    });
+
+
+    // return popupDiv;
   }
 
   return ulList;

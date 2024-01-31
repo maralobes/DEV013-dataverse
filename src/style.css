@@ -58,9 +58,7 @@ body {
     width: 100%;
     max-width: 350px;
     height: 300px;
-    object-fit: cover;
     font-size: 25px;
-    flex-direction: column;
     column-gap: 16px;
 }
 
@@ -85,3 +83,5 @@ footer{
     background-color: #757577;
     padding: 100px;
 }
+
+
