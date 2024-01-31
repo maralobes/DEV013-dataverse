@@ -56,6 +56,13 @@ body {
     object-fit: cover;
     font-size: 25px;
     flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    font-size: 25px;
+    flex-direction: column;
+    column-gap: 16px;
 }
 
 .cList img{
@@ -64,7 +71,6 @@ body {
     max-height: 1200px;
     height: 700px;
     border-radius: 10%;
-
 }
 
 dt{
