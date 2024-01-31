@@ -56,11 +56,6 @@
     object-fit: cover;
     font-size: 25px;
     flex-direction: column;
-    width: 100%;
-    max-width: 350px;
-    height: 300px;
-    font-size: 25px;
-    column-gap: 16px;
 }
 
 .cList img{
