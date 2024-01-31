@@ -10,7 +10,6 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    align-items: center;
     background-image: url("https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/2.%20Great%20Wall%20of%20China.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,35 +17,36 @@ body {
     height: 60vh;
     margin: 0;
     width: auto;
-    padding-bottom: 2%;
     }
 
 .container h1, p{ 
     color:white;
     text-align: center;
-    align-content: space-evenly;
-    padding: 10%;
+    justify-content: space-evenly;
+    align-items: start;
 
 }
 
 .container h1{
-    font-size: 50px;
+    font-size: 100px;
     text-transform: uppercase;
+    padding: 100px;
 }
 
 .container p{
-    font-size: 100px; 
+    font-size: 350px;
+    padding: 500px;
+    
 }
 
 .fList{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
     gap: 800px;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 300px 90px;
+    margin: 10%;
+    padding: 900px;
     list-style: none;
 }
 
@@ -55,5 +55,8 @@ body {
     max-width: 350px;
     height: 300px;
     object-fit: conver;
-    border-radius: 10px;
+}
+
+.cList img{
+    border-radius: 10%;
 }
