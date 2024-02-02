@@ -61,6 +61,8 @@ body {
     /* margin: 15%; */
     list-style: none;
     justify-content: center;
+    position: relative;
+    z-index: 1;
 }
 
 .cList {
@@ -116,9 +118,12 @@ footer{
     margin-bottom: 30px;
 }
 
-#namePop{
-    font-size: 24px;
-    font-weight: bold;
+.popup {
+    position: fixed;
+    /* top: 0%; */
+    bottom: 10%;
+    height: 80%;
+    z-index: 2;
+    padding: 70px;
+    border: 1px solid #ccc;
 }
-
-

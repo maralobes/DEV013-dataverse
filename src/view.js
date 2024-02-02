@@ -142,113 +142,133 @@ export const renderItems = (data) => {
     imageWork.addEventListener("click", function openPopup() {
       const popupDiv = document.createElement("div");
       popupDiv.className = "popup";
-      popupDiv.id = "popup";
-      popupDiv.style.display = "block";
-      popupDiv.style.backgroundColor = "#dcdcdc";
-      popupDiv.style.margin = "100px";
+      popupDiv.style.display = "inline-flex";
+      popupDiv.style.backgroundColor = "#ffffff";
+      popupDiv.style.marginLeft = "300px";
+      popupDiv.style.marginRight = "300px";
+      popupDiv.style.borderRadius = "100px";
   
       const imagePop = document.createElement("img");
       imagePop.src = data[i].imageUrl;
       imagePop.id = "imagePop";
-      imagePop.style.display = "block";
-      imagePop.style.margin = "0 auto";
-      imagePop.style.width = "500px";
-      imagePop.style.height = "500px";
-      imagePop.style.padding = "30px";
+      // imagePop.style.display = "inline";
+      // imagePop.style.margin = "0 auto";
+      // imagePop.style.marginBlockStart = "10%";
+      imagePop.style.width = "350px";
+      imagePop.style.height = "350px";
+      imagePop.style.paddingInlineStart = "30px";
+      imagePop.style.paddingBlockStart = "50px";
+      // imagePop.style.borderRadius = "20px";
 
+      const popupContainerDiv = document.createElement("div");
+      popupContainerDiv.className = "popup-container";
+      popupContainerDiv.style.display = "block";
+      // popupContainerDiv.style.marginTop = "10%";
+      popupContainerDiv.style.marginBottom = "10%";
+      popupContainerDiv.style.padding = "20px";
+      popupContainerDiv.style.alignContent = "flex-start";
+      popupContainerDiv.style.fontSize = "14px"
+      popupContainerDiv.style.color = "black";
+      popupContainerDiv.style.display = "block";
 
       const namePop = document.createElement("p");
       namePop.innerHTML = `<b>Name:</b> ${data[i].name}`;
-      // namePop.style.paddingTop = "15px";
       namePop.style.margin = "7px";
-      namePop.style.paddingLeft = "100px";
-      namePop.style.alignContent = "flex-start";
-      namePop.style.fontSize = "22px"
+      // namePop.style.paddingLeft = "100px";
+      // namePop.style.alignContent = "flex-start";
+      // namePop.style.fontSize = "24px"
       namePop.style.color = "black";
+      // namePop.style.display = "inline";
 
       const shortDescPop = document.createElement("p");
       shortDescPop.innerHTML = "<b>Short description:</b>" + data[i].shortDescription;
-      // shortDescPop.id = "shortDescPop";
+      // // shortDescPop.id = "shortDescPop";
       shortDescPop.style.margin = "7px";
-      shortDescPop.style.paddingLeft = "100px";
-      shortDescPop.style.alignContent = "flex-start";
-      shortDescPop.style.fontSize = "22px"
+      // shortDescPop.style.paddingLeft = "100px";
+      // shortDescPop.style.alignContent = "flex-start";
+      // shortDescPop.style.display = "block";
+      // // shortDescPop.style.fontSize = "22px"
       shortDescPop.style.color = "black";
     
       const descrPop = document.createElement("p");
       descrPop.innerHTML = "<b>Description:</b>" + data[i].description;
       // descrPop.id = "descPop";
       descrPop.style.margin = "7px";
-      descrPop.style.paddingLeft = "100px";
-      descrPop.style.paddingRight = "100px";
-      descrPop.style.alignContent = "flex-start";
-      descrPop.style.fontSize = "22px"
+      // descrPop.style.paddingLeft = "100px";
+      // descrPop.style.paddingRight = "100px";
+      // descrPop.style.alignContent = "flex-start";
+      // // descrPop.style.fontSize = "22px"
       descrPop.style.color = "black";
+      // descrPop.style.textAlign = "justify";
   
       const yearPop = document.createElement("p");
       yearPop.innerHTML = "<b>Year of built:</b>" + data[i].facts.yearOfBuilt;
-      yearPop.id = "yearPop";
+      // yearPop.id = "yearPop";
       yearPop.style.margin = "7px";
-      yearPop.style.paddingLeft = "100px";
-      yearPop.style.alignContent = "flex-start";
-      yearPop.style.fontSize = "22px"
+      // yearPop.style.paddingLeft = "100px";
+      // yearPop.style.alignContent = "flex-start";
+      // // yearPop.style.fontSize = "22px"
       yearPop.style.color = "black";
   
       const stylePop = document.createElement("p");
       stylePop.innerHTML = "<b>Style:</b>" + data[i].facts.style;
-      stylePop.id = "stylePop";
+      // stylePop.id = "stylePop";
       stylePop.style.margin = "7px";
-      stylePop.style.paddingLeft = "100px";
-      stylePop.style.alignContent = "flex-start";
-      stylePop.style.fontSize = "22px"
+      // stylePop.style.paddingLeft = "100px";
+      // stylePop.style.alignContent = "flex-start";
+      // // stylePop.style.fontSize = "22px"
       stylePop.style.color = "black";
   
       const locationPop = document.createElement("p");
       locationPop.innerHTML = "<b>Location:</b>" + data[i].facts.location;
-      locationPop.id = "locationPop";
+      // locationPop.id = "locationPop";
       locationPop.style.margin = "7px";
-      locationPop.style.paddingLeft = "100px";
-      locationPop.style.alignContent = "flex-start";
-      locationPop.style.fontSize = "22px"
+      // locationPop.style.paddingLeft = "100px";
+      // locationPop.style.alignContent = "flex-start";
+      // // locationPop.style.fontSize = "22px"
       locationPop.style.color = "black";
   
       const constructorPop = document.createElement("p");
       constructorPop.innerHTML = "<b>Constructor:</b>" + data[i].facts.constructor;
-      constructorPop.id = "constructorPop";
+      // constructorPop.id = "constructorPop";
       constructorPop.style.margin = "7px";
-      constructorPop.style.paddingLeft = "100px";
-      constructorPop.style.alignContent = "flex-start";
-      constructorPop.style.fontSize = "22px"
+      // constructorPop.style.paddingLeft = "100px";
+      // constructorPop.style.alignContent = "flex-start";
+      // // constructorPop.style.fontSize = "22px"
       constructorPop.style.color = "black";
   
       const visitorsPop = document.createElement("p");
       visitorsPop.innerHTML = "<b>Visitors:</b>" + data[i].facts.annualVisitors;
-      visitorsPop.id = "visitorsPop";
+      // visitorsPop.id = "visitorsPop";
       visitorsPop.style.margin = "7px";
-      visitorsPop.style.paddingLeft = "100px";
-      visitorsPop.style.alignContent = "flex-start";
-      visitorsPop.style.fontSize = "22px"
+      // visitorsPop.style.paddingLeft = "100px";
+      // visitorsPop.style.alignContent = "flex-start";
+      // // visitorsPop.style.fontSize = "22px"
       visitorsPop.style.color = "black";
   
       const wonderPop = document.createElement("p");
       wonderPop.innerHTML = "<b>Wonder of the world:</b>" + data[i].facts.isWonderOfTheWorld;
-      wonderPop.id = "wonderPop";
+      // wonderPop.id = "wonderPop";
       wonderPop.style.margin = "7px";
-      wonderPop.style.paddingLeft = "100px";
-      wonderPop.style.alignContent = "flex-start";
-      wonderPop.style.fontSize = "22px"
+      // wonderPop.style.paddingLeft = "100px";
+      // wonderPop.style.alignContent = "flex-start";
+      // // wonderPop.style.fontSize = "22px"
       wonderPop.style.color = "black";
 
-      const buttonPopup = document.createElement("button");
-      buttonPopup.classList.add("closePopup");
+      // const buttonPopup = document.createElement("button");
+      // buttonPopup.classList.add("closePopup");
+      // buttonPopup,
+      const root = document.getElementById("root");
+      popupDiv.append(imagePop,popupContainerDiv)
+      popupContainerDiv.append(namePop,shortDescPop,descrPop,yearPop,stylePop,locationPop,constructorPop,visitorsPop,wonderPop);
 
-      popupDiv.append(buttonPopup,imagePop,namePop,shortDescPop,descrPop,yearPop,stylePop,locationPop,constructorPop,visitorsPop,wonderPop);
-      ulList.append(popupDiv);
-
-
-      buttonPopup.addEventListener("click", function closePopup(){
-        popupDiv.parentNode.removeChild(popupDiv);
-      })
+      root.append(popupDiv);
+      // buttonPopup.addEventListener("click", function closePopup(){
+      //   popupDiv.parentNode.removeChild(popupDiv);
+      // })
+      popupDiv.addEventListener('click', function closePopup() {
+      root.removeChild(popupDiv);
+      });
 
     });
 
