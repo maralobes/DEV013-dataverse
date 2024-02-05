@@ -184,7 +184,7 @@ export default [
     name: "Neuschwanstein Castle",
     shortDescription: "Fairytale-like castle in Bavaria",
     description: "Neuschwanstein Castle, nestled in the Bavarian Alps near Füssen, Germany, is a fairytale-inspired masterpiece and a symbol of romantic architecture. Commissioned by King Ludwig II and completed in 1886, the castle sits against a picturesque backdrop of forests and mountains. With its turrets, towers, and enchanting interiors, Neuschwanstein is a blend of medieval and fantasy elements, reminiscent of a storybook castle. Drawing inspiration from Wagnerian opera, the castle offers stunning panoramic views and attracts millions of visitors annually, making it one of the most iconic and visited landmarks in Germany, embodying the romantic spirit of the 19th century.",
-    imageUrl: "https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/13.-Neuschwanstein-Castle.jpeg",
+    imageUrl: "https://github.com/C-LedezmaRodriguez/DEV013-dataverse/blob/main/src/images/13.%20Neuschwanstein-Castle.jpeg?raw=true",
     facts: {
       yearOfBuilt: "1886",
       style: "Romantic",
