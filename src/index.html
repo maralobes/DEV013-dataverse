@@ -19,14 +19,15 @@
       <h1>Architopia</h1>
       <p>Exploring the wonders of our planet, one place at a time</p>
     </header>
-    <label for="annualVisitors">Filter by annual visitors</label>
-      <select data-testid="select-filter" name="annualVisitors">
+    <label for="select-filter">Filter by annual visitors</label>
+    <select data-testid="select-filter" name="annualVisitors" id="select-filter">
+        <option value="none" hidden>Select an option</option>
         <option value="fistRange">0-2000000</option>
-        <option value="secondRange">2000001-4000000 </option>
-        <option value="thirdRange">4000001-6000000 </option>
-        <option value="fourthRange">6000 001-8000000 </option>
-        <option value="fifthRange">8000001-10000000 </option>
-      </select>
+        <option value="secondRange">2000001-4000000</option>
+        <option value="thirdRange">4000001-6000000</option>
+        <option value="fourthRange">6000 001-8000000</option>
+        <option value="fifthRange">8000001-10000000</option>
+    </select>
     <div id = "root"></div>
     <footer>
       <p>© 2024 Architopia. All rights reserved</p>
