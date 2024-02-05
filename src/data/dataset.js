@@ -355,7 +355,7 @@ export default [
       style: "Moorish",
       location: "Granada, Spain",
       constructor: "Nasrid Dynasty",
-      annualVisitors: 2.700000,
+      annualVisitors: 2700000,
       isWonderOfTheWorld: false
     }
   },
