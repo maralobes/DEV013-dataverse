@@ -4,15 +4,12 @@
     box-sizing: border-box;
 }
 body {
-   
     min-height: 100vh;
     background-color: #F2F2F0;  
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    /* font-weight: 300; */
     font-variation-settings: "slnt" 0;
 }
-
 .container {
     display: flex;
     flex-direction: column;
@@ -25,21 +22,16 @@ body {
     width: auto;
     opacity: 110%;
     }
-
 .container h1, p{ 
     color:white;
-    /* text-align: center; */
     justify-content: space-evenly;
     align-items: start;
-
 }
-
 .container h1{
     font-size: 25px;
     text-transform: uppercase;
     padding: 40px;
 }
-
 .container p{
     font-size: 50px;
     font-weight: bold;
@@ -49,33 +41,22 @@ body {
     padding-right: 15%;
     padding-bottom: 100px; 
     height: 100vh;
-
 }
-
 .fList{
     display: flex;
     flex-flow: row wrap;
-    /* justify-content: space-evenly; */
     align-items: stretch;
     gap: 7%;
-    /* margin: 15%; */
     list-style: none;
     justify-content: center;
     position: relative;
     z-index: 1;
 }
-
 .cList {
     object-fit: cover;
-    /* font-size: 25px; */
     flex-direction: column;
 }
-
 .cList img{
-    /* max-width: 50%;
-    max-width: 1100px;
-    max-height: 1200px;
-    max-height: 50%; */
     width: 350px;
     height: 350px;
     border-radius: 10%;
@@ -89,7 +70,6 @@ dl {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-/* itemprop:nth-of-type(2){ */
 [itemprop = "name"]{
     font-size: 24px;
     font-weight: bold;
@@ -99,12 +79,10 @@ dt{
     font-size: 24px;
     font-weight: bold;
 }
-
 dd {
     font-size: 18px;
     color: #757577;
 }
-
 footer{
     font-family: "Urbanist", sans-serif;
     font-optical-sizing: auto;
@@ -117,10 +95,8 @@ footer{
     text-align: center;
     margin-bottom: 30px;
 }
-
 .popup {
     position: fixed;
-    /* top: 0%; */
     bottom: 10%;
     height: 80%;
     z-index: 2;
