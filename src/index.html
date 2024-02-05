@@ -10,15 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
   </head>
   <body>
-
     <header class="container">
       <img>
       <h1>Architopia</h1>
       <p>Exploring the wonders of our planet, one place at a time</p>
     </header>
+    <label for="sortBy">Sort by:</label>
+    <select data-testid="select-sort" name="name" id="sortBy">
+      <option value="asc">Name: A-Z</option>
+      <option value="desc">Name: Z-A</option>
+    </select>
     <div id = "root"></div>
     <footer>
       <p>© 2024 Architopia. All rights reserved</p>
