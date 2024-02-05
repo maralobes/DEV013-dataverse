@@ -8,6 +8,6 @@
 };*/
 
 export const filteredData = (data, filterBy, value) => {
-  const filterByAnnualVisitors= data.filter(data => data.facts.annualVisitors >= "0" && data.facts.annualVisitors <="2000000")
+  const filterByAnnualVisitors= data.filterBy( value => value.facts.annualVisitors <="2000000" )
   console.log(filterByAnnualVisitors);
 }
