@@ -11,6 +11,14 @@ selectFilter.addEventListener("change", function (event){
     const filterAnnualVisitors = filteredData(data, 'annualVisitors' ,event.target.value);
     rootFill.innerHTML = "";
     rootFill.appendChild(renderItems(filterAnnualVisitors));
+
+    const selectSort = document.querySelector('select[data-testid="select-sort"]');
+  selectSort.addEventListener("change", function (event) {
+  const orderData = sortByName(filterAnnualVisitors, "name", event.target.value);
+  rootFill.innerHTML = "";
+  rootFill.appendChild(renderItems(orderData));
+  console.log(renderItems(orderData));
+});
 });
 
 const selectSort = document.querySelector('select[data-testid="select-sort"]');

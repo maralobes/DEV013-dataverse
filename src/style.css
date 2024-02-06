@@ -10,7 +10,7 @@ body {
     font-optical-sizing: auto;
     font-variation-settings: "slnt" 0;
 }
-.container {
+header {
     display: flex;
     flex-direction: column;
     background-image: url("https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/2.%20Great%20Wall%20of%20China.jpeg");
@@ -22,17 +22,17 @@ body {
     width: auto;
     opacity: 110%;
     }
-.container h1, p{ 
+header h1, p{ 
     color:white;
     justify-content: space-evenly;
     align-items: start;
 }
-.container h1{
+header h1{
     font-size: 25px;
     text-transform: uppercase;
     padding: 40px;
 }
-.container p{
+header p{
     font-size: 50px;
     font-weight: bold;
     text-align: center;

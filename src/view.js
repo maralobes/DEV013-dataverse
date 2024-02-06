@@ -4,6 +4,8 @@ export const renderItems = (data) => {
   for (let i = 0; i < data.length; i++) {
     const item = document.createElement("li");
     item.classList.add("cList");
+    item.setAttribute("itemscope", "");
+    item.setAttribute("itemtype","architectonics-works");
 
     const archiWork = document.createElement("dl");
     archiWork.setAttribute("itemscope", "");
