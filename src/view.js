@@ -63,6 +63,7 @@ export const renderItems = (data) => {
     styleText.setAttribute("itemprop", "style");
     styleText.innerHTML = data[i].facts.style;
     stylerWork.style.display = "none";
+    styleText.style.display = "none";
 
     const locationWork = document.createElement("dt");
     locationWork.innerHTML = "Location:";
@@ -83,8 +84,8 @@ export const renderItems = (data) => {
     visitorsWork.innerHTML = "Annual visitors:";
     const visitorsText = document.createElement("dd");
     visitorsText.setAttribute("itemprop", "annualVisitors");
-    visitorsText.innerHTML = data[i].facts.annualVisitors;
-    visitorsText.style.display = "none";
+    visitorsText.innerHTML = "Annual visitors: " + data[i].facts.annualVisitors;
+    // visitorsText.style.display = "none";
     visitorsWork.style.display = "none";
 
     const wonderWork = document.createElement("dt");
