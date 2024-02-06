@@ -1,19 +1,19 @@
 export const filteredData = (data, filterBy, value) => { 
-  const filterWork = data.filter(function(value, data){
+  const filterWork = data.filter((architecturalWork)=>{
     if (value === "firstRange"){
-      return data.facts[filterBy]<=2000000;
+      return architecturalWork.facts[filterBy]<=2000000;
     }
     else if (value === "secondRange") {
-      return (data.facts[filterBy]>2000000 && data.facts[filterBy]<=4000000)
+      return (architecturalWork.facts[filterBy]>2000000 && architecturalWork.facts[filterBy]<=4000000)
     }
     else if (value === "thirdRange") {
-      return (data.facts[filterBy]>4000000 && data.facts[filterBy]<=6000000)
+      return (architecturalWork.facts[filterBy]>4000000 && architecturalWork.facts[filterBy]<=6000000)
     }
     else if (value === "fourthRange") {
-      return (data.facts[filterBy]>6000000 && data.facts[filterBy]<=8000000)
+      return (architecturalWork.facts[filterBy]>6000000 && architecturalWork.facts[filterBy]<=8000000)
     }
     else {
-      return (data.facts[filterBy]>8000000 && data.facts[filterBy]<=10000000)
+      return (architecturalWork.facts[filterBy]>8000000 && architecturalWork.facts[filterBy]<=10000000)
     }
   });
 

@@ -13,5 +13,9 @@ selectSort.addEventListener("change", function (event) {
   rootFill.appendChild(renderItems(orderData));
 });
 
-const filterBy = document.querySelector('select[data-testid="select-filter"]]');
-filterBy.appendChild()
+const selectFilter = document.querySelector('select[data-testid="select-filter"]');
+selectFilter.addEventListener("change", function (event){
+    const filterAnnualVisitors = filteredData(data, 'annualVisitors' ,event.target.value);
+    rootFill.innerHTML = "";
+    rootFill.appendChild(renderItems(filterAnnualVisitors));
+});
