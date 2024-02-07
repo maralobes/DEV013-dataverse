@@ -74,4 +74,19 @@ export const data = [
       isWonderOfTheWorld: true
     }
   },
+  {
+    id: "sagradafamilia",
+    name: "Sagrada Familia",
+    shortDescription: "Gaudi's masterpiece basilica in Barcelona",
+    description: "The Sagrada Familia, under construction since 1882, is a mesmerizing basilica located in Barcelona, Spain, and stands as a masterpiece of Catalan Modernism designed by the visionary architect Antoni Gaudí. This iconic structure, anticipated to be completed in the coming years, captivates with its unique and intricate design, blending Gothic and Art Nouveau elements. The Sagrada Familia is renowned for its towering spires, detailed facades, and intricate sculptures. As a symbol of Barcelona and Gaudí's architectural genius, it attracts around 4 million visitors annually, offering a profound experience that transcends time and showcases the evolution of architectural artistry.",
+    imageUrl: "https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/8.%20Sagrada%20Familia.jpeg",
+    facts: {
+      yearOfBuilt: "1882",
+      style: "Catalan Modernism",
+      location: "Barcelona, Spain",
+      constructor: "Antoni Gaudí",
+      annualVisitors: 4000000,
+      isWonderOfTheWorld: false
+    }
+  }
 ];
