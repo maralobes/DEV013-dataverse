@@ -23,25 +23,28 @@
       <h1>Architopia</h1>
       <p>Exploring the wonders of our planet, one place at a time</p>
     </header>
-    <label for="filterVisitors">Filter by annual visitors</label>
-    <select
-      data-testid="select-filter"
-      name="annualVisitors"
-      id="filterVisitors"
-    >
-      <option value="none" hidden>Select an option</option>
-      <option value="firstRange">0-2000000</option>
-      <option value="secondRange">2000001-4000000</option>
-      <option value="thirdRange">4000001-6000000</option>
-      <option value="fourthRange">6000 001-8000000</option>
-      <option value="fifthRange">8000001-10000000</option>
-    </select>
-    <label for="sortName">Sort by:</label>
-    <select data-testid="select-sort" name="name" id="sortName">
-      <option value="none" hidden>Name</option>
-      <option value="asc">A-Z</option>
-      <option value="desc">Z-A</option>
-    </select>
+   <div class="container">
+    <div class="workFunction">
+      <label for="filterVisitors">Filter by: </label>
+      <select data-testid="select-filter" name="annualVisitors" id="filterVisitors">
+        <option value="disabled" hidden>Annual visitors</option>
+        <option value="firstRange">0-2000000</option>
+        <option value="secondRange">2000001-4000000</option>
+        <option value="thirdRange">4000001-6000000</option>
+        <option value="fourthRange">6000 001-8000000</option>
+        <option value="fifthRange">8000001-10000000</option>
+      </select>
+    </div>
+    <div class="workFunction">
+      <label for="sortName">Sort by: </label>
+      <select data-testid="select-sort" name="name" id="sortName">
+        <option hidden ="disabled">Name</option>
+        <option value="asc">A-Z</option>
+        <option value="desc">Z-A</option>
+      </select>
+    </div>
+    <button id="buttonClear">Clear</button>
+   </div>
     <div id="root"></div>
     <footer>
       <p>© 2024 Architopia. All rights reserved</p>
