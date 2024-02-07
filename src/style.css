@@ -14,10 +14,9 @@ header {
   display: flex;
   flex-direction: column;
   /* background-image: url("https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/2.%20Great%20Wall%20of%20China.jpeg"); */
-  background-image:url("https://www.figma.com/file/P1nBYUIzm7Pu18e9p1fy3P/Architopia-(Community)?type=design&node-id=296-21&mode=design&t=DNup88XluyVhYoqX-4");
+  background-image:url("https://github.com/C-LedezmaRodriguez/DEV013-dataverse/blob/main/src/images/ImageBackground.jpeg?raw=true");
   background-repeat: no-repeat;
   background-size: cover;
-  /* image 18 */
 
 position: absolute;
 width: 1728px;
