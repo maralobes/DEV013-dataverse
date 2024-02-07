@@ -37,3 +37,14 @@ export const sortByName = (data, sortBy, sortOrder) => {
   return sortWork;
 };
 
+export const computeStats = (data) => {
+  const statsWonderWorld = data.filter(statistics => statistics.facts.isWonderOfTheWorld === true);
+  const statsVisitors = statsWonderWorld.map(statistics => statistics.facts.annualVisitors);
+
+  const totalWonder = statsVisitors.reduce((a, b) => a + b, 0);
+  const average = totalWonder / statsVisitors.length;
+
+  return average;
+};
+
+
