@@ -1,5 +1,6 @@
 import { filteredData } from "./dataFunctions.js";
 import { sortByName } from "./dataFunctions.js";
+import { computeStats } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 import data from "./data/dataset.js";
 
@@ -9,6 +10,7 @@ rootFill.appendChild(renderItems(data));
 const selectFilter = document.querySelector(
   'select[data-testid="select-filter"]'
 );
+
 selectFilter.addEventListener("change", function (event) {
   const filterAnnualVisitors = filteredData(
     data,
@@ -39,11 +41,18 @@ selectSort.addEventListener("change", function (event) {
   rootFill.appendChild(renderItems(orderData));
 });
 
-const buttonClear = document.getElementById("buttonClear");
-buttonClear.addEventListener("click", function clear() {
-  selectFilter.selectedIndex = 0;
-  selectSort.selectedIndex = 0;
-  rootFill.innerHTML = "";
+// const buttonStats = document.getElementById("buttonStats");
+// buttonStats.addEventListener("click", function display (){
+//   const displayStats = computeStats(data);
+//   rootFill.innerHTML = "";
+//   rootFill.appendChild(renderItems(displayStats));
+// });
 
-  rootFill.appendChild(renderItems(data));
-});
+// const buttonClear = document.getElementById("buttonClear");
+// buttonClear.addEventListener("click", function clear() {
+//   selectFilter.selectedIndex = 0;
+//   selectSort.selectedIndex = 0;
+//   rootFill.innerHTML = "";
+
+//   rootFill.appendChild(renderItems(data));
+// });

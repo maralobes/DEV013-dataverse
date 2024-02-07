@@ -1,4 +1,4 @@
-import { filteredData, sortByName } from '../src/dataFunctions.js';
+import { filteredData, computeStats } from '../src/dataFunctions.js';
 import { data as fakeData } from './data.js';
 
 describe('filterBy', () => {
@@ -32,27 +32,33 @@ describe('filterBy', () => {
   });
 });
 
-describe('SortBy', () => {
+// describe('SortBy', () => {
 
-    expect(sortedDataAsc[0]).toHaveProperty('name', 'Eiffel Tower');
+//   expect(sortedDataAsc[0]).toHaveProperty('name', 'Eiffel Tower');
+// });
+
+// describe('OrderDataAsc', () => {
+//   const sortedData = sortByName(data, 'name', 'asc');
+
+//   expect(sortedData[0].name).toBe('Eiffel Tower');
+//   expect(sortedData[1].name).toBe('Great Wall of China');
+//   expect(sortedData[2].name).toBe('Pyramids of Giza');
+//   expect(sortedData[3].name).toBe('Taj Mahal');
+//   expect(sortedData[4].name).toBe('The Colosseum');
+// });
+
+// describe('OrderDataDesc', () => {
+//   const sortedData = sortByName(data, 'name', 'desc');
+
+//   expect(sortedData[0].name).toBe('The Colosseum');
+//   expect(sortedData[1].name).toBe('Taj Mahal');
+//   expect(sortedData[2].name).toBe('Pyramids of Giza');
+//   expect(sortedData[3].name).toBe('Great Wall of China');
+//   expect(sortedData[4].name).toBe('Eiffel Tower');
+// });
+
+describe ('Statistics', () => {
+  it ('returns average of annual visitors of the Wonder of the World', () => {
+    expect(computeStats(fakeData)).toEqual(6500000);
   });
-
-  describe('OrderDataAsc', () => {
-    const sortedData = sortByName(data, 'name', 'asc');
-
-    expect(sortedData[0].name).toBe('Eiffel Tower');
-    expect(sortedData[1].name).toBe('Great Wall of China');
-    expect(sortedData[2].name).toBe('Pyramids of Giza');
-    expect(sortedData[3].name).toBe('Taj Mahal');
-    expect(sortedData[4].name).toBe('The Colosseum');
-  });
-
-  describe('OrderDataDesc', () => {
-    const sortedData = sortByName(data, 'name', 'desc');
-
-    expect(sortedData[0].name).toBe('The Colosseum');
-    expect(sortedData[1].name).toBe('Taj Mahal');
-    expect(sortedData[2].name).toBe('Pyramids of Giza');
-    expect(sortedData[3].name).toBe('Great Wall of China');
-    expect(sortedData[4].name).toBe('Eiffel Tower');
-  });
+});

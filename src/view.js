@@ -205,7 +205,7 @@ export const renderItems = (data) => {
 
       root.append(popupDiv);
       popupDiv.addEventListener('click', function closePopup() {
-      root.removeChild(popupDiv);
+        root.removeChild(popupDiv);
       });
     });
   });
