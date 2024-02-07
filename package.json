@@ -6,7 +6,7 @@
   "scripts": {
     "htmlhint": "htmlhint src/*.html test/*.html",
     "eslint": "eslint --ext .js src/ test/",
-    "1pretest": "npm run eslint && npm run htmlhint",
+    "pretest": "npm run eslint && npm run htmlhint",
     "test": "jest --verbose --coverage test/",
     "test:e2e": "playwright test",
     "test:oas": "jest --verbose tests-read-only/oa/",

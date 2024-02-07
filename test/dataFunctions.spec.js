@@ -32,11 +32,27 @@ describe('filterBy', () => {
   });
 });
 
-describe('sortBy', () => {
-  it('returns `sortByName` ascendent or descendent', () => {
-    const sortedDataAsc = sortByName(fakeData, 'name', 'asc');
-    const sortDataDesc = sortByName(fakeData, 'name', 'desc');
+describe('SortBy', () => {
 
     expect(sortedDataAsc[0]).toHaveProperty('name', 'Eiffel Tower');
   });
-});
+
+  describe('OrderDataAsc', () => {
+    const sortedData = sortByName(data, 'name', 'asc');
+
+    expect(sortedData[0].name).toBe('Eiffel Tower');
+    expect(sortedData[1].name).toBe('Great Wall of China');
+    expect(sortedData[2].name).toBe('Pyramids of Giza');
+    expect(sortedData[3].name).toBe('Taj Mahal');
+    expect(sortedData[4].name).toBe('The Colosseum');
+  });
+
+  describe('OrderDataDesc', () => {
+    const sortedData = sortByName(data, 'name', 'desc');
+
+    expect(sortedData[0].name).toBe('The Colosseum');
+    expect(sortedData[1].name).toBe('Taj Mahal');
+    expect(sortedData[2].name).toBe('Pyramids of Giza');
+    expect(sortedData[3].name).toBe('Great Wall of China');
+    expect(sortedData[4].name).toBe('Eiffel Tower');
+  });

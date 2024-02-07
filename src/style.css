@@ -1,105 +1,155 @@
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    min-height: 100vh;
-    background-color: #F2F2F0;  
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-variation-settings: "slnt" 0;
+  min-height: 100vh;
+  background-color: #f2f2f0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "slnt" 0;
 }
-.container {
+header {
     display: flex;
     flex-direction: column;
-    background-image: url("https://raw.githubusercontent.com/C-LedezmaRodriguez/DEV013-dataverse/main/src/images/2.%20Great%20Wall%20of%20China.jpeg");
+    background-image: url("https://github.com/C-LedezmaRodriguez/DEV013-dataverse/blob/main/src/images/ImageBackground.jpeg?raw=true");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 60vh;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     width: auto;
     opacity: 110%;
-    }
-.container h1, p{ 
-    color:white;
-    justify-content: space-evenly;
-    align-items: start;
+  }
+header h1,
+p {
+  color: white;
+  justify-content: space-evenly;
+  align-items: start;
 }
-.container h1{
-    font-size: 25px;
-    text-transform: uppercase;
-    padding: 40px;
+header h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 40px;
 }
-.container p{
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 60px;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-bottom: 100px; 
-    height: 100vh;
+header p {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 60px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 100px;
+  height: 100vh;
 }
-.fList{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
-    gap: 7%;
-    list-style: none;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
+.fList {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  gap: 7%;
+  list-style: none;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 .cList {
-    object-fit: cover;
-    flex-direction: column;
+  object-fit: cover;
+  flex-direction: column;
 }
-.cList img{
-    width: 350px;
-    height: 350px;
-    border-radius: 10%;
-    margin-block-start: 2em;
-    margin-block-end: 2em;
+.cList img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10%;
+  margin-block-start: 2em;
+  margin-block-end: 2em;
 }
 dl {
-    display: block;
-    margin-block-start: 0px;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  display: block;
+  margin-block-start: 0px;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
-[itemprop = "name"]{
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
+[itemprop="name"] {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
 }
-dt{
-    font-size: 24px;
-    font-weight: bold;
+dt {
+  font-size: 24px;
+  font-weight: bold;
 }
 dd {
-    font-size: 18px;
-    color: #757577;
+  font-size: 18px;
+  color: #757577;
 }
-footer{
-    font-family: "Urbanist", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100px;
-    font-style: normal;
-    font-size: 20px;
-    background-color: #757577;
-    padding: 30px;
-    margin-top: 70px;
-    text-align: center;
-    margin-bottom: 30px;
+footer {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+  font-size: 20px;
+  background-color: #757577;
+  padding: 30px;
+  margin-top: 70px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .popup {
-    position: fixed;
-    bottom: 10%;
-    height: 80%;
-    z-index: 2;
-    padding: 70px;
-    border: 1px solid #ccc;
+  position: fixed;
+  bottom: 10%;
+  height: 80%;
+  z-index: 2;
+  padding: 70px;
+  border: 1px solid #ccc;
+}
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.workFunction {
+  margin: 10px 20px 10px 30px;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 15px;
+  margin-left: 30px;
+}
+select {
+  display: inline;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: #444;
+  line-height: 1.3;
+  padding: 0.6em 1.4em 0.5em 0.8em;
+  width: 300px;
+  box-sizing: border-box;
+  margin: 10px 20px 10px 30px;
+  border: 1px solid #aaa;
+  border-radius: 1.5em;
+  appearance: none;
+  background-color: #fff;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/54/54785.png);
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+}
+#buttonClear {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: #444;
+  line-height: 1.3;
+  padding: 0.6em 1em 0.6em 1em;
+  width: 100px;
+  box-sizing: border-box;
+  margin: 35px 20px 20px 30px;
+  border: 2px solid #aaa;
+  border-radius: 1.5em;
+  background-color: #c0c0c0;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
 }
