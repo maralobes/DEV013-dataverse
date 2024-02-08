@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   min-height: 100vh;
   background-color: #f2f2f0;
@@ -10,28 +11,16 @@ body {
   font-optical-sizing: auto;
   font-variation-settings: "slnt" 0;
 }
-/* header {
-    display: flex;
-    flex-direction: column;
-    background-image: url("https://github.com/C-LedezmaRodriguez/DEV013-dataverse/blob/main/src/images/ImageBackground.jpeg?raw=true");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 60vh;
-    margin-bottom: 30px;
-    width: auto;
-    opacity: 110%;
-  } */
-  header {
-    display: flex;
-    flex-direction: column;
-    background-image: url(https://github.com/C-LedezmaRodriguez/DEV013-dataverse/blob/main/src/images/ImageBackground.jpeg?raw=true);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    max-width: 100%;
-    width: 1728px;
-    height: 500px;
-    opacity: 110%;
+header {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://github.com/C-LedezmaRodriguez/DEV013-dataverse/blob/main/src/images/ImageBackground.jpeg?raw=true);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-width: 100%;
+  width: 1728px;
+  height: 500px;
+  opacity: 110%;
 }
 header h1,
 p {
@@ -68,6 +57,10 @@ header p {
   object-fit: cover;
   flex-direction: column;
 }
+.cList {
+    object-fit: cover;
+    flex-direction: column;
+  }
 .cList img {
   width: 350px;
   height: 350px;
@@ -83,10 +76,20 @@ dl {
   margin-inline-end: 0px;
 }
 [itemprop="name"] {
-  font-size: 24px;
+  font-size: calc(0.8em + 1vw);
   font-weight: bold;
+  width: 100%;
   color: black;
 }
+[itemprop="location"] {
+    width: 100%;
+    font-size: calc(0.3em + 1vw);
+
+}
+[itemprop="annualVisitors"] {
+    width: 100%;
+    font-size: calc(0.3em + 1vw);
+ }
 dt {
   font-size: 24px;
   font-weight: bold;
@@ -108,10 +111,8 @@ footer {
 }
 .popup {
   position: fixed;
-  bottom: 10%;
-  height: 80%;
   z-index: 2;
-  padding: 70px;
+  padding: 5%;
   border: 1px solid #ccc;
 }
 .container {

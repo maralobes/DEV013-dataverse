@@ -132,27 +132,33 @@ export const renderItems = (data) => {
       popupDiv.className = "popup";
       popupDiv.style.display = "inline-flex";
       popupDiv.style.backgroundColor = "#ffffff";
-      popupDiv.style.marginLeft = "300px";
-      popupDiv.style.marginRight = "300px";
+      popupDiv.style.marginLeft = "15%";
+      popupDiv.style.marginRight = "15%";
       popupDiv.style.borderRadius = "100px";
+      popupDiv.style.width = "fit-content";
+      popupDiv.style.height = "fit-content";
+      popupDiv.style.top = "5%";
+      popupDiv.style.bottom = "5%";
   
       const imagePop = document.createElement("img");
       imagePop.src = item.imageUrl;
       imagePop.id = "imagePop";
-      imagePop.style.width = "350px";
-      imagePop.style.height = "350px";
-      imagePop.style.paddingInlineStart = "30px";
-      imagePop.style.paddingBlockStart = "50px";
+      imagePop.style.width = "50%";
+      imagePop.style.height = "50%";
+      imagePop.style.borderRadius = "50px"
+      // imagePop.style.paddingInlineStart = "30px";
+      imagePop.style.marginTop = "4%";
 
       const popupContainerDiv = document.createElement("div");
       popupContainerDiv.className = "popup-container";
       popupContainerDiv.style.display = "block";
-      popupContainerDiv.style.marginBottom = "10%";
-      popupContainerDiv.style.padding = "20px";
+      // popupContainerDiv.style.marginBottom = "10%";
+      popupContainerDiv.style.paddingLeft = "4%";
       popupContainerDiv.style.alignContent = "flex-start";
       popupContainerDiv.style.fontSize = "14px"
       popupContainerDiv.style.color = "black";
       popupContainerDiv.style.display = "block";
+      popupContainerDiv.style.width = "fit-content";
 
       const namePop = document.createElement("p");
       namePop.innerHTML = `<b>Name:</b> ${item.name}`;
