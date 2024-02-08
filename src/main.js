@@ -33,11 +33,13 @@ selectSort.addEventListener("change", function (event) {
 const buttonStats = document.getElementById("statistics");
 buttonStats.addEventListener("click", function popupStats(){
   const stats = computeStats(data);
-  const popupStatsWonder = document.querySelector('div[class="popStats"]');
+  const popupStatsWonder = document.createElement("div");
+  popupStatsWonder.className = "popStats";
   popupStatsWonder.innerHTML = "Average of people who visit the wonders of the world: " + stats;
   rootFill.append(popupStatsWonder);
-  popupStatsWonder.addEventListener('click', function closePopup() {
+  popupStatsWonder.addEventListener('click', function closePopStats() {
   rootFill.removeChild(popupStatsWonder);
+
  });
 });
 
