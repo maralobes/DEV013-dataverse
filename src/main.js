@@ -35,9 +35,12 @@ buttonStats.addEventListener("click", function popupStats(){
   const stats = computeStats(data);
   const popupStatsWonder = document.createElement("div");
   popupStatsWonder.className = "popStats";
-  popupStatsWonder.innerHTML = "Average of people who visit the wonders of the world: " + stats;
+  popupStatsWonder.innerHTML = `Average of people who visit the wonders of the world: <b>${stats}</b>`;
+  const buttonCloseStats = document.createElement("button");
+  buttonCloseStats.className = "buttonCloseStats";
+  popupStatsWonder.append(buttonCloseStats);
   rootFill.append(popupStatsWonder);
-  popupStatsWonder.addEventListener('click', function closePopStats() {
+  buttonCloseStats.addEventListener('click', function closePopStats() {
   rootFill.removeChild(popupStatsWonder);
 
  });
