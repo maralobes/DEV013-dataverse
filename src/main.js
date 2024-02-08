@@ -39,8 +39,8 @@ buttonStats.addEventListener("click", function popupStats(){
   popupStatsWonder.innerHTML = "Average of people who visit the wonders of the world: " + stats;
   rootFill.append(popupStatsWonder);
   popupStatsWonder.addEventListener('click', function closePopup() {
-  rootFill.removeChild(popupStatsWonder);
- });
+    rootFill.removeChild(popupStatsWonder);
+  });
 });
 
 const buttonClear = document.getElementById("buttonClear");
