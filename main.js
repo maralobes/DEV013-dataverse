@@ -48,7 +48,7 @@ buttonStats.addEventListener("click", function popupStats(){
 
 });
 
-const buttonClear = document.getElementById("buttonClear");
+const buttonClear = document.querySelector('button[data-testid="button-clear"]');
 buttonClear.addEventListener("click", function clear() {
   selectFilter.selectedIndex = 0;
   selectSort.selectedIndex = 0;
