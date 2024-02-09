@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header>
+      <img />
+      <h1>Architopia</h1>
+      <p>Exploring the wonders of our planet, one place at a time</p>
+    </header>
+   <div class="container">
+    <div class="workFunction">
+      <label for="filterVisitors">Filter by: </label>
+      <select data-testid="select-filter" name="annualVisitors" id="filterVisitors">
+        <option value="disabled" hidden>Annual visitors</option>
+        <option value="firstRange">0-2000000</option>
+        <option value="secondRange">2000001-4000000</option>
+        <option value="thirdRange">4000001-6000000</option>
+        <option value="fourthRange">6000 001-8000000</option>
+        <option value="fifthRange">8000001-10000000</option>
+      </select>
+    </div>
+    <div class="workFunction">
+      <label for="sortName">Sort by: </label>
+      <select data-testid="select-sort" name="name" id="sortName">
+        <option hidden ="disabled">Name</option>
+        <option value="asc">A-Z</option>
+        <option value="desc">Z-A</option>
+      </select>
+    </div>
+    <button data-testid="button-clear">Clear</button>
+    <button id = "statistics">stats</button>
+    <div class="popStats"></div>
+   </div>
+    <div id="root"></div>
+    <footer>
+      <p>© 2024 Architopia. All rights reserved</p>
+    </footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>
