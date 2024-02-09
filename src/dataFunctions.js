@@ -46,5 +46,3 @@ export const computeStats = (data) => {
 
   return average;
 };
-
-

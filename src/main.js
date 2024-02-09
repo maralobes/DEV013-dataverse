@@ -10,6 +10,7 @@ rootFill.appendChild(renderItems(data));
 const selectFilter = document.querySelector(
   'select[data-testid="select-filter"]'
 );
+
 selectFilter.addEventListener("change", function (event) {
   const filterAnnualVisitors = filteredData(data,"annualVisitors",event.target.value);
   rootFill.innerHTML = "";
@@ -30,6 +31,7 @@ selectSort.addEventListener("change", function (event) {
   rootFill.appendChild(renderItems(orderData));
 });
 
+
 const buttonStats = document.getElementById("statistics");
 buttonStats.addEventListener("click", function popupStats(){
   const stats = computeStats(data);
@@ -40,13 +42,13 @@ buttonStats.addEventListener("click", function popupStats(){
   buttonCloseStats.className = "buttonCloseStats";
   popupStatsWonder.append(buttonCloseStats);
   rootFill.append(popupStatsWonder);
-  buttonCloseStats.addEventListener('click', function closePopStats() {
-  rootFill.removeChild(popupStatsWonder);
+  popupStatsWonder.addEventListener('click', function closePopup() {
+    rootFill.removeChild(popupStatsWonder);
+  });
 
- });
 });
 
-const buttonClear = document.querySelector('button[data-testid="button-clear"]');
+const buttonClear = document.getElementById("buttonClear");
 buttonClear.addEventListener("click", function clear() {
   selectFilter.selectedIndex = 0;
   selectSort.selectedIndex = 0;
